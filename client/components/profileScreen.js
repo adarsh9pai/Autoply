@@ -18,7 +18,7 @@ export default class ProfileScreen extends Component {
       <View>
         <Text> profile screen </Text>
         <Button
-          title='go to homescreen'
+          title='Logout'
           onPress={() => navigate('Home')}
         />
         {/* <BottomBar /> */}

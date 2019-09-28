@@ -8,4 +8,20 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+    job_card:{
+        height: '55%',
+        width: '92%',
+        borderRadius: 20,
+        padding: 0,
+        margin: '4%',
+    },
+    job_card_image: {
+        height: '55%',
+        width: '100%',
+    },
+    job_card_company:{
+        paddingLeft: '6%',
+        paddingTop: '90%',
+        fontSize: 40
+    }
 })
