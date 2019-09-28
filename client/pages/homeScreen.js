@@ -18,8 +18,8 @@ export default class HomeScreen extends Component {
       <View>
         <Text> homeScreen </Text>
         <Button
-        title='go to profilescreen'
-        onPress = {() => navigate('Profile', {name: 'Imtiaz'})}
+        title='go to main screen'
+        onPress = {() => navigate('MainScreen', {name: 'Imtiaz'})}
         />
       </View>
     );

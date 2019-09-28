@@ -7,7 +7,7 @@ import { RootReducer } from './redux/rootRedcuer'
 import { createAppContainer } from 'react-navigation'
 import { createStackNavigator } from 'react-navigation-stack'
 import HomeScreen from './pages/homeScreen'
-import ProfileScreen from './pages/profileScreen'
+import MainScreen from './pages/bottomNavigation'
 
 
 const store = createStore(RootReducer)
@@ -22,7 +22,7 @@ export default function App() {
 
 const MainNavigator = createStackNavigator({
   Home: { screen: HomeScreen },
-  Profile: { screen: ProfileScreen }
+  MainScreen: { screen: MainScreen }
 })
 
 const NavApp = createAppContainer(MainNavigator)
