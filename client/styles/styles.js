@@ -101,5 +101,15 @@ export const styles = StyleSheet.create({
       maybeRenderImageText: {
         paddingHorizontal: 10,
         paddingVertical: 10,
+      },
+      submitButton: {
+        height: 100,
+        borderTopWidth: 1,
+        borderBottomWidth: 1,
+        fontSize: 25,
+        minHeight: 50,
+        paddingLeft: 20,
+        paddingRight: 20,
+        color: 'white'
       }
 })

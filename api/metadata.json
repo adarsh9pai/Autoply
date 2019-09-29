@@ -12,7 +12,7 @@
   },
   {
     "Name": "Wish",
-    "/html/body/div[2]/div/div[2]/form/div[1]/ul/li[6]/label/div[2]/input": "currentCompany",
+    "/html/body/div[2]/div/div[2]/form/div[1]/ul/li[6]/label/div[2]/input": "current_company",
     "/html/body/div[2]/div/div[2]/form/div[5]/button": "button"
   },
   {
@@ -33,7 +33,7 @@
   },
   {
     "Name": "Transfix",
-    "/html/body/div[2]/div/div[2]/form/div[2]/ul/li[1]/label/div[2]/input": "linkedinUrl",
+    "/html/body/div[2]/div/div[2]/form/div[2]/ul/li[1]/label/div[2]/input": "linkedin",
     "/html/body/div[2]/div/div[2]/form/div[5]/button": "button"
   }
 ]
