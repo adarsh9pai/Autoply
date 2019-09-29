@@ -27,7 +27,7 @@ class DataEntry extends Component {
             jobApplicationLocation: '',
             urlGithub: '',
             urlLinkedin: '',
-            urlTwitter: '',
+            phone: '',
             urlPortfolio: '',
             image: null,
             uploading: false,
@@ -43,7 +43,7 @@ class DataEntry extends Component {
         this.handleJobAppChange = this.handleJobAppChange.bind(this)
         this.handleurlGithubChange = this.handleurlGithubChange.bind(this)
         this.handleurlLinkedChange = this.handleurlLinkedChange.bind(this)
-        this.handleTwitterChange = this.handleTwitterChange.bind(this)
+        this.handlePhoneChange = this.handlePhoneChange.bind(this)
         this.handlePortfolioChange = this.handlePortfolioChange.bind(this)
         this.handleF1J1Change = this.handleF1J1Change.bind(this)
         this.handleUSCitiChange = this.handleUSCitiChange.bind(this)
@@ -69,8 +69,8 @@ class DataEntry extends Component {
         this.setState({ urlLinkedin })
     }
 
-    handleTwitterChange = (urlTwitter) => {
-        this.setState({ urlTwitter })
+    handlePhoneChange = (phone) => {
+        this.setState({ phone })
     }
 
     handlePortfolioChange = (urlPortfolio) => {
@@ -166,10 +166,10 @@ class DataEntry extends Component {
                 />
                 <TextInput
                     style={styles.textInput}
-                    placeholder='Twitter URL'
+                    placeholder='Phone Number'
                     maxLength={100}
-                    value={this.state.urlTwitter}
-                    onChangeText={this.handleTwitterChange}
+                    value={this.state.phoneNumber}
+                    onChangeText={this.handlePhoneChange}
                     autoFocus={true}
                 />
                 <TextInput
