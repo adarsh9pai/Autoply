@@ -36,7 +36,8 @@ export const styles = StyleSheet.create({
         fontSize: 40,
         fontWeight: 'bold',
         paddingLeft: '4%',
-        top: '15%'
+        top: '15%',
+        color: 'white'
     },
     job_image: {
         flex: 1,
@@ -48,8 +49,8 @@ export const styles = StyleSheet.create({
     },
     textInput: {
         borderColor: '#CCCCCC',
-        borderTopWidth: 1,
-        borderBottomWidth: 1,
+        borderTopWidth: 0.1,
+        borderBottomWidth: 0.1,
         height: 50,
         fontSize: 25,
         paddingLeft: 20,

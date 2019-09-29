@@ -1,6 +1,7 @@
 export const Purple = {
     mainColor: '#000000',
-    secondartColor: '#111111'
+    secondartColor: '#111111',
+    tertiaryColor: '#ff0000'
 }
 
 export const Pink = {

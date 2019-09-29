@@ -9,6 +9,7 @@ import MainScreen from './pages/bottomNavigation'
 import DataEntry from './pages/dataEntry'
 import WebScreen from './pages/webScreen'
 
+console.ignoredYellowBox = ['Warning: Each', 'Warning: Failed'];
 
 const store = createStore(RootReducer)
 
@@ -21,10 +22,10 @@ export default function App() {
 }
 
 const MainNavigator = createStackNavigator({
-  MainScreen: { screen: MainScreen },
   Home: { screen: HomeScreen },
+  MainScreen: { screen: MainScreen },
   DataEntry: { screen: DataEntry },
-  Web: { screen: WebScreen },
+  WebView: { screen: WebScreen },
 },
 {
   defaultNavigationOptions: {

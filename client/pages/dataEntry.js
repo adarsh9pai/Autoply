@@ -399,7 +399,7 @@ class DataEntry extends Component {
             job_application_location: this.state.jobApplicationLocation,
             url_linkedin: this.state.urlLinkedin,
             phone: this.state.phone,
-            'f1/j1_Visa': this.state['F1/J1 Visa'],
+            'f1/j1_visa': this.state['F1/J1 Visa'],
             'us_citizenship': this.state['US Citizenship'],
             'primary_language': this.state['Primary Language'],
             'favorite_tool': this.state['Favorite Tool'],

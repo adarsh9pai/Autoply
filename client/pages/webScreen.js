@@ -22,6 +22,8 @@ export default class WebScreen extends Component {
         const urlLength = JSON.stringify(this.props.navigation.getParam('link')).length
         const uri = JSON.stringify(this.props.navigation.getParam('link')).substring(1, urlLength - 1)
 
+        console.log('made it here')
+
         return (
             <WebView source={{ uri }} />
             // <WebView source={{ uri: link }} />

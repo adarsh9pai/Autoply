@@ -10,7 +10,7 @@ export default createMaterialBottomTabNavigator({
     navigationOptions: {
       tabBarLabel: 'Jobs',
       tabBarIcon: ({ tintColor }) => (
-        <Icon name='ios-briefcase' color={Theme.primaryColors} size={24} />
+        <Icon name='ios-briefcase' color={'white' } size={24} />
       )
     },
     screen: JobScreen,
@@ -20,7 +20,7 @@ export default createMaterialBottomTabNavigator({
     navigationOptions: {
       tabBarLabel: 'Profile',
       tabBarIcon: ({ tintColor }) => (
-        <Icon name='ios-person' color={Theme.primaryColors} size={24} />
+        <Icon name='ios-person' color={'white'} size={24} />
       ),
     },
     screen: ProfileScreen,
@@ -32,7 +32,7 @@ export default createMaterialBottomTabNavigator({
   },
   shifting: true,
   initialRouteName: 'JobScreen',
-  activeColor: Theme.secondaryColor,
+  activeColor: 'white',
   barStyle: { backgroundColor: Theme.mainColor },
   order: ['JobScreen', 'ProfileScreen']
 })
