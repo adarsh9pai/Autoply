@@ -11,7 +11,8 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import * as ImagePicker from 'expo-image-picker'
+//import * as ImagePicker from 'expo-image-picker'
+import * as DocumentPicker from 'expo-document-picker'
 import * as Permissions from 'expo-permissions';
 
 export default class App extends Component {
@@ -143,7 +144,8 @@ export default class App extends Component {
       });
 
       if (!pickerResult.cancelled) {
-        uploadResponse = await uploadImageAsync(pickerResult.uri);
+        //uploadResponse = await uploadImageAsync(pickerResult.uri);
+        uploadResponse = await uploadDocumentAsync(pickerResult.uri);
         uploadResult = await uploadResponse.json();
 
         this.setState({
@@ -164,7 +166,7 @@ export default class App extends Component {
 }
 
 async function uploadImageAsync(uri) {
-  let apiUrl = '18.191.30.17:5000/profile';
+  let apiUrl = 'http://18.191.30.17:5000/profile';
 
   // Note:
   // Uncomment this if you want to experiment with local server
