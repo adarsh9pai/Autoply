@@ -8,6 +8,7 @@ from selenium.webdriver.chrome.options import Options
 import os
 import urllib
 import json
+from urllib.parse import urlparse
 
 
 with open('metadata.json') as json_file:
@@ -24,15 +25,16 @@ class Apply(Resource):
         payload = parser.parse_args()
 
         payload_url = payload['link']
+        print(payload_url)
         info = payload['info']
-
+        info = urlparse(info)
         #chrome_opt = Options()
         #chrome_opt.add_argument('--headless')
         #chrome_opt.add_argument('--no-sandbox')
         #chrome_opt.add_argument('--disable-dev-shm-usage')
         #browser = webdriver.Chrome(chrome_options=chrome_opt)
         browser = webdriver.Chrome()
-        browser.get(payload_url)
+        browser.get(str(payload_url))
 
         if "lever" in payload_url:
 
@@ -59,6 +61,6 @@ class Apply(Resource):
             browser.find_element_by_xpath(key).send_keys(Keys.ENTER)
             browser.close()
         return {
-            'message' : payload_url
+            'message' : "Job Applied. Success."
         }, 200
 
