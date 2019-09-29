@@ -23,7 +23,6 @@ const initState = {
         "urlPortfolio": "https://imtiazkhaled.github.io/my-portfolio/#/",
         "photoUrl": "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/53551206_2204740312879455_1797005387409391616_n.jpg?_nc_cat=107&_nc_oc=AQnTpnev2LAq8UxjhXfUILrAqCb1KlrSdeO8J3iInd9zN6-WFPg7HjnDBTutH0jWdtE&_nc_ht=scontent-dfw5-1.xx&oh=e8df0761c0776472f42bbfc2eaca6d16&oe=5E30B1F1"
     },
-
 }
 
 export const RootReducer = (state = initState, action) => {

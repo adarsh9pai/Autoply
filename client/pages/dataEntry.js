@@ -1,9 +1,21 @@
 import React, { Component } from 'react'
-import { ScrollView, Button, TextInput, Text, KeyboardAvoidingView } from 'react-native'
+import {
+    ScrollView,
+    Button,
+    TextInput,
+    Text,
+    KeyboardAvoidingView,
+    View,
+    StyleSheet,
+    ActivityIndicator,
+} from 'react-native'
 import { styles } from '../styles/styles'
 import { Purple as Theme } from '../styles/colorThemes'
 import { Avatar } from 'react-native-elements'
 // import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
+
+import * as ImagePicker from 'expo-image-picker'
+import * as Permissions from 'expo-permissions';
 
 
 export default class DataEntry extends Component {
@@ -17,6 +29,8 @@ export default class DataEntry extends Component {
             urlLinkedin: '',
             urlTwitter: '',
             urlPortfolio: '',
+            image: null,
+            uploading: false,
         },
             this.handleUniversityChange = this.handleUniversityChange.bind(this)
         this.handleJobAppChange = this.handleJobAppChange.bind(this)
@@ -50,28 +64,6 @@ export default class DataEntry extends Component {
         this.setState({ urlPortfolio })
     }
 
-    onSubmit = e => {
-        const { navigate } = this.props.navigation
-        const email = JSON.stringify(this.props.navigation.getParam('email'))
-        const name = JSON.stringify(this.props.navigation.getParam('name'))
-        const urlLength = JSON.stringify(this.props.navigation.getParam('photoUrl')).length
-        const photoUrl = JSON.stringify(this.props.navigation.getParam('photoUrl')).substring(1, urlLength - 1)
-        const idLength = JSON.stringify(this.props.navigation.getParam('id')).length
-        const id = JSON.stringify(this.props.navigation.getParam('id')).substring(1, idLength - 1)
-        console.log(id)
-        
-        const user = {
-            ...this.state,
-            email,
-            name,
-            photoUrl,
-            id,
-
-        }
-        // console.log(user)
-        navigate('Resume', user)
-    }
-
     render() {
 
         const urlLength = JSON.stringify(this.props.navigation.getParam('photoUrl')).length
@@ -81,7 +73,9 @@ export default class DataEntry extends Component {
         const emailLength = JSON.stringify(this.props.navigation.getParam('email')).length
         const email = JSON.stringify(this.props.navigation.getParam('email')).substring(1, emailLength - 1)
 
-        console.log(this.props)
+        // console.log(this.props)
+
+        let { image } = this.state;
 
 
         return (
@@ -153,13 +147,200 @@ export default class DataEntry extends Component {
                     onChangeText={this.handlePortfolioChange}
                     autoFocus={true}
                 />
+                {/* <StatusBar barStyle="default" /> */}
+
                 <Button
-                    title='Submit'
-                    onPress={this.onSubmit}
+                    onPress={this._pickImage}
+                    title="Upload your resume and submit"
                 />
+                {this._maybeRenderImage()}
+                {this._maybeRenderUploadingOverlay()}
 
             </KeyboardAvoidingView>
 
         )
     }
+
+    _maybeRenderUploadingOverlay = () => {
+        if (this.state.uploading) {
+            return (
+                <View
+                    style={[StyleSheet.absoluteFill, styles.maybeRenderUploading]}>
+                    <ActivityIndicator color="#fff" size="large" />
+                </View>
+            );
+        }
+    };
+
+    _maybeRenderImage = () => {
+        let {
+            image
+        } = this.state;
+
+        if (!image) {
+            return;
+        }
+
+        return (
+            <View
+                style={styles.maybeRenderContainer}>
+                <View
+                    style={styles.maybeRenderImageContainer}>
+                    <Image source={{ uri: image }} style={styles.maybeRenderImage} />
+                </View>
+
+                <Text
+                    onPress={this._copyToClipboard}
+                    onLongPress={this._share}
+                    style={styles.maybeRenderImageText}>
+                    {image}
+                </Text>
+            </View>
+        );
+    };
+
+    _share = () => {
+        Share.share({
+            message: this.state.image,
+            title: 'Check out this photo',
+            url: this.state.image,
+        });
+    };
+
+    _copyToClipboard = () => {
+        Clipboard.setString(this.state.image);
+        alert('Copied image URL to clipboard');
+    };
+
+    _takePhoto = async () => {
+        const {
+            status: cameraPerm
+        } = await Permissions.askAsync(Permissions.CAMERA);
+
+        const {
+            status: cameraRollPerm
+        } = await Permissions.askAsync(Permissions.CAMERA_ROLL);
+
+        // only if user allows permission to camera AND camera roll
+        if (cameraPerm === 'granted' && cameraRollPerm === 'granted') {
+            let pickerResult = await ImagePicker.launchCameraAsync({
+                allowsEditing: true,
+                aspect: [4, 3],
+            });
+
+            this._handleImagePicked(pickerResult);
+        }
+    };
+
+    _pickImage = async () => {
+        const {
+            status: cameraRollPerm
+        } = await Permissions.askAsync(Permissions.CAMERA_ROLL);
+
+        // only if user allows permission to camera roll
+        if (cameraRollPerm === 'granted') {
+            let pickerResult = await ImagePicker.launchImageLibraryAsync({
+                allowsEditing: true,
+                aspect: [4, 3],
+            });
+
+            this._handleImagePicked(pickerResult);
+        }
+    };
+
+    _handleImagePicked = async pickerResult => {
+        let uploadResponse, uploadResult;
+
+        try {
+            this.setState({
+                uploading: true
+            });
+
+            if (!pickerResult.cancelled) {
+                uploadResponse = await this.uploadImageAsync(pickerResult.uri);
+                uploadResult = await uploadResponse.json();
+
+                this.setState({
+                    image: uploadResult.location
+                });
+
+                alert('Upload Successful!')
+                const { navigate } = this.props.navigation
+                navigate('MainScreen')
+
+            }
+        } catch (e) {
+            console.log({ uploadResponse });
+            console.log({ uploadResult });
+            console.log({ e });
+            alert('Upload failed, sorry :(');
+        } finally {
+            this.setState({
+                uploading: false
+            });
+        }
+    };
+
+
+    uploadImageAsync = async uri => {
+        let apiUrl = 'http://18.191.30.17:5000/profile';
+        // console.log(this.state)
+        // const { navigate } = this.props.navigation
+        const email = JSON.stringify(this.props.navigation.getParam('email'))
+        const name = JSON.stringify(this.props.navigation.getParam('name'))
+        const urlLength = JSON.stringify(this.props.navigation.getParam('photoUrl')).length
+        const photoUrl = JSON.stringify(this.props.navigation.getParam('photoUrl')).substring(1, urlLength - 1)
+        const idLength = JSON.stringify(this.props.navigation.getParam('id')).length
+        const id = JSON.stringify(this.props.navigation.getParam('id')).substring(1, idLength - 1)
+        // console.log(id)
+
+        const user = {
+            ...this.state,
+            email,
+            name,
+            photoUrl,
+            id,
+
+        }
+
+        console.log(typeof user.id)
+        console.log(user.id)
+
+        // Note:
+        // Uncomment this if you want to experiment with local server
+        //
+        // if (Constants.isDevice) {
+        //   apiUrl = `https://your-ngrok-subdomain.ngrok.io/upload`;
+        // } else {
+        //   apiUrl = `http://localhost:3000/upload`
+        // }
+
+        let uriParts = uri.split('.');
+        let fileType = uriParts[uriParts.length - 1];
+
+        let formData = new FormData();
+        // let formData = new FormData();
+
+        formData.append('photo', {
+            uri,
+            name: `photo.${fileType}`,
+            type: `image/${fileType}`,
+        })
+
+        formData.append('id', user.id)
+
+        console.log(formData)
+        let options = {
+            method: 'POST',
+            body: formData,
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'multipart/form-data',
+            },
+        };
+
+        return fetch(apiUrl, options);
+
+    }
 }
+

@@ -37,7 +37,7 @@ export default class HomeScreen extends Component {
           ...user,
           signedIn: true
         })
-        navigate('Resume', user)
+        navigate('DataEntry', user)
       }
       else
       {
