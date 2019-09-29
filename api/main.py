@@ -18,4 +18,4 @@ api.add_resource(Company,'/company/all')
 api.add_resource(Profile,'/profile')
 
 if __name__ == '__main__':
-    app.run()
+    app.run('0.0.0.0', 5000)
