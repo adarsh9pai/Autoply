@@ -23,23 +23,20 @@ export const styles = StyleSheet.create({
         textAlign: "center",
         color: '#454552',
     },
-    job_card:{
-        height: '55%',
-        width: '92%',
-        borderRadius: 20,
-        padding: 0,
-        margin: '4%',
-    },
-    job_card_image: {
-        height: '55%',
-        width: '100%',
-    },
-    job_card_company:{
-        paddingLeft: '6%',
-        paddingTop: '90%',
-        fontSize: 40,
-    },
     mediumText: {
         fontSize: 28
+    },
+    job_text: {
+        fontSize: 50,
+        fontWeight: 'bold',
+        paddingLeft: '4%',
+        top: '70%'
+    },
+    job_image: {
+        flex: 1,
+        height: null,
+        width: null,
+        resizeMode: 'cover',
+        borderRadius: 20
     }
 })

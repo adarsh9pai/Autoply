@@ -21,8 +21,8 @@ export default function App() {
 }
 
 const MainNavigator = createStackNavigator({
+  MainScreen: { screen: MainScreen },
   Home: { screen: HomeScreen },
-  MainScreen: { screen: MainScreen }
 })
 
 const NavApp = createAppContainer(MainNavigator)
