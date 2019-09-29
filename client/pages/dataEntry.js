@@ -34,7 +34,7 @@ class DataEntry extends Component {
             'F1/J1 Visa': '',
             'US Citizenship': '',
             'Primary Language': '',
-            'Current Company': '',
+            currentCompany: '',
             'Favorite Tool': '',
             'Country of Residence': '',
 
@@ -90,7 +90,7 @@ class DataEntry extends Component {
     }
 
     handleurlCurrCompChange = (currComp) => {
-        this.setState({ 'Current Company': currComp })
+        this.setState({ currentCompany: currComp })
     }
 
     handleFavToolChange = (tool) => {
@@ -208,7 +208,7 @@ class DataEntry extends Component {
                     style={styles.textInput}
                     placeholder='Current Company'
                     maxLength={100}
-                    value={this.state['Current Company']}
+                    value={this.state.currentCompany}
                     onChangeText={this.handleurlCurrCompChange}
                     autoFocus={true}
                 />
@@ -359,7 +359,7 @@ class DataEntry extends Component {
 
                 }
                 console.log(user)
-                // this.props.addUser(user)
+                this.props.addUser(user)
                 const { navigate } = this.props.navigation
                 navigate('MainScreen')
 
@@ -385,15 +385,24 @@ class DataEntry extends Component {
         const photoUrl = JSON.stringify(this.props.navigation.getParam('photoUrl')).substring(1, urlLength - 1)
         const idLength = JSON.stringify(this.props.navigation.getParam('id')).length
         const id = JSON.stringify(this.props.navigation.getParam('id')).substring(1, idLength - 1)
-        const firstName = name.split(' ').slice(0, -1).join(' ');
-        const lastName = name.split(' ').slice(-1).join(' ');
+        const first_name = name.split(' ').slice(0, -1).join(' ');
+        const last_name = name.split(' ').slice(-1).join(' ');
 
         const user = {
-            ...this.state,
+            
+            first_name,
+            last_name,
             email,
-            name,
-            photoUrl,
-            id,
+            school: this.state.School,
+            currentCompany: this.state.currentCompany,
+            job_application_location: this.state.jobApplicationLocation,
+            url_linkedin: this.state.urlLinkedin,
+            phone: this.state.phone,
+            'f1/j1_Visa': this.state['F1/J1 Visa'],
+            'us_citizenship': this.state['US Citizenship'],
+            'primary_language': this.state['Primary Language'],
+            'favorite_tool': this.state['Favorite Tool'],
+            'country_of_residence': this.state['Country of Residence'],
 
         }
 
@@ -408,9 +417,11 @@ class DataEntry extends Component {
             type: `image/${fileType}`,
         })
 
-        formData.append('id', user.id)
+        formData.append('id', id)
 
         formData.append('type', fileType)
+
+        formData.append('user', user)
 
         console.log(formData)
         let options = {

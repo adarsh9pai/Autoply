@@ -33,17 +33,18 @@ export const styles = StyleSheet.create({
         color: 'white'
     },
     job_text: {
-        fontSize: 50,
+        fontSize: 40,
         fontWeight: 'bold',
         paddingLeft: '4%',
-        top: '70%'
+        top: '15%'
     },
     job_image: {
         flex: 1,
         height: null,
         width: null,
-        resizeMode: 'cover',
-        borderRadius: 20
+        // resizeMode: 'cover',
+        borderRadius: 20,
+        backgroundColor: 'white'
     },
     textInput: {
         borderColor: '#CCCCCC',

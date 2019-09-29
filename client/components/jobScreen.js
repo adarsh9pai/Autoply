@@ -1,15 +1,16 @@
 import React from 'react'
-import { View, Dimensions, ImageBackground, Animated, PanResponder, Text } from 'react-native'
+import { View, Dimensions, ImageBackground, Animated, PanResponder, Text, ActivityIndicator } from 'react-native'
 import { connect } from 'react-redux'
 import { styles } from '../styles/styles'
+import { Avatar } from 'react-native-elements'
 
 const SCREEN_HEIGHT = Dimensions.get('window').height
 const SCREEN_WIDTH = Dimensions.get('window').width
 
 class JobScreen extends React.Component {
 
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
 
     this.position = new Animated.ValueXY()
     this.state = {
@@ -96,7 +97,6 @@ class JobScreen extends React.Component {
   renderUsers = (jobs) => {
     return jobs.map((job, i) => {
 
-
       if (i < this.state.currentIndex) {
         return null
       }
@@ -107,16 +107,23 @@ class JobScreen extends React.Component {
             {...this.PanResponder.panHandlers}
             key={job.id}
             style={[this.rotateAndTranslate, {
-              height: SCREEN_HEIGHT * 0.80, width: SCREEN_WIDTH, padding: 10, position: 'absolute'
+              height: SCREEN_HEIGHT * 0.50, width: SCREEN_WIDTH, padding: 10, position: 'absolute', flex: 1,
+              flexDirection: 'column',
+              alignItems: 'center',
             }]}>
-            <ImageBackground style={{ height: '100%' }} imageStyle={styles.job_image}
-              source={{ uri: job.image }}>
-              <Text style={styles.job_text}>
-                {job.name}
-              </Text>
-            </ImageBackground>
+            <Avatar containerStyle={{ paddingTop: 15, paddingLeft: 20 }} size='xlarge' rounded source={{ uri: job.logo }} />
+            
+            
+            <Text>Software Engineering Intern, 2020</Text>
+            
+            <Text style={styles.job_text}>
+              {job.name}
+            </Text>
+            {/* <ImageBackground style={{ height: '100%' }} imageStyle={styles.job_image}
+              source={{ uri: job.logo }}>
+            </ImageBackground> */}
 
-          </Animated.View>
+          </Animated.View >
         )
       }
       else {
@@ -125,14 +132,18 @@ class JobScreen extends React.Component {
             key={job.id} style={[{
               opacity: this.nextCardOpacity,
               transform: [{ scale: this.nextCardScale }],
-              height: SCREEN_HEIGHT * 0.80, width: SCREEN_WIDTH, padding: 10, position: 'absolute'
+              height: SCREEN_HEIGHT * 0.50, width: SCREEN_WIDTH, padding: 10, position: 'absolute'
             }]}>
-            <ImageBackground style={{ height: '100%' }} imageStyle={styles.job_image}
-              source={{ uri: job.image }}>
+          
+          <Avatar containerStyle={{ paddingTop: 15, paddingLeft: 20 }} size='xlarge' rounded source={{ uri: job.logo }} />
+              
+              
+              <Text >Software Engineering Intern, 2020</Text>
+              
               <Text style={styles.job_text}>
                 {job.name}
               </Text>
-            </ImageBackground>
+            
           </Animated.View>
         )
       }
@@ -155,14 +166,12 @@ class JobScreen extends React.Component {
   }
 
   render() {
-    const { companies } = this.props
+    const { jobs } = this.props
     return (
 
-      companies ?
-        <View>
-          {this.renderUsers(companies)}
-        </View> :
-        <View />
+      <View >
+        {this.renderUsers(jobs)}
+      </View>
     )
   }
 }
@@ -171,7 +180,7 @@ class JobScreen extends React.Component {
 const maptStateToProps = (state) => {
   console.log(state)
   return {
-    jobs: state.companies
+    jobs: state.jobs
   }
 }
 
