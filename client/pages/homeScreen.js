@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, Button, processColor, Image, SafeAreaView } from 'react-native'
+import { Text, Button, processColor, Image, SafeAreaView } from 'react-native'
 import * as Google from 'expo-google-app-auth'
 import { GoogleOAuth } from '../secret'
 import GoogleButton from '../images/google_button.png'
@@ -37,7 +37,7 @@ export default class HomeScreen extends Component {
           ...user,
           signedIn: true
         })
-        navigate('DataEntry', user)
+        navigate('Resume', user)
       }
       else
       {

@@ -24,8 +24,9 @@ export default function App() {
 }
 
 const MainNavigator = createStackNavigator({
-  MainScreen: { screen: Resume },
   Home: { screen: HomeScreen },
+  Resume: { screen: Resume },
+  MainScreen: { screen: MainScreen },
   DataEntry: {screen: EntryScreen},
   Web: { screen: WebScreen },
 })
