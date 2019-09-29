@@ -15,8 +15,7 @@ class Company(Resource):
         all_companies = dumps(collection.find({}))
         all_companies = json.JSONDecoder().decode(all_companies)
 
-        print(all_companies)
-    
         return {
             "message" : "success",
+            "list" : all_companies
         }, 200
