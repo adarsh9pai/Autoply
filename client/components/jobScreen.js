@@ -141,7 +141,7 @@ class JobScreen extends React.Component {
     currPost = this.props.jobs[this.state.currentIndex]
     console.log(currPost.link)
 
-    if (currPost.support) {
+    if (currPost.support === 'False') {
       this.props.navigation.navigate('WebView', currPost)
     } else {
 

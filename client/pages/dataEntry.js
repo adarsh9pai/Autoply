@@ -23,20 +23,18 @@ class DataEntry extends Component {
         super(props)
 
         this.state = {
-            School: '',
-            jobApplicationLocation: '',
-            urlGithub: '',
-            urlLinkedin: '',
-            phone: '',
-            urlPortfolio: '',
-            image: null,
-            uploading: false,
-            'F1/J1 Visa': '',
-            'US Citizenship': '',
-            'Primary Language': '',
-            currentCompany: '',
-            'Favorite Tool': '',
-            'Country of Residence': '',
+            school: 'The School of Hard Knocks',
+            job_application_location: 'California',
+            url_github: 'www.github.com',
+            url_linkedin: 'www.linkedin.com',
+            phone: '218563565',
+            url_portfolio: 'google.com',
+            f1_j1_visa: 'y',
+            us_citizenship: 'n',
+            primary_language: 'Cpp',
+            current_company: 'UTA',
+            favorite_tool: 'Cpp',
+            country_of_residence: 'Africa',
 
         },
             this.handleUniversityChange = this.handleUniversityChange.bind(this)
@@ -336,7 +334,7 @@ class DataEntry extends Component {
 
             if (!pickerResult.cancelled) {
                 uploadResponse = await this.uploadImageAsync(pickerResult.uri)
-                uploadResult = await uploadResponse.json()
+                uploadResult = await uploadResponse.json().catch(error => console.log(error))
 
                 this.setState({
                     image: uploadResult.location
@@ -369,7 +367,8 @@ class DataEntry extends Component {
             console.log({ uploadResponse })
             console.log({ uploadResult })
             console.log({ e })
-            alert('Upload failed, sorry :(')
+            const { navigate } = this.props.navigation
+            navigate('MainScreen')
         } finally {
             this.setState({
                 uploading: false
