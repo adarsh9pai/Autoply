@@ -37,7 +37,7 @@ class Apply(Resource):
         if "lever" in payload_url:
 
             resume = browser.find_element_by_name("resume")
-            resume.send_keys(os.getcwd()+'/image.jpeg')
+            resume.send_keys(os.getcwd()+'/'+info["id"]+'+.jpeg')
 
             browser.find_element_by_name('name').send_keys(info['first_name'] + info['last_name'])
             browser.find_element_by_name('email').send_keys(info['email'])
