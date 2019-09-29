@@ -18,4 +18,4 @@ class Company(Resource):
         return {
             "message" : "success",
             "companies" : all_companies,
-        }, 201
+        }, 200

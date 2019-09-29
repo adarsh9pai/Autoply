@@ -70,5 +70,5 @@ class Apply(Resource):
 
 
         return {
-            'message' : payload_url
+            'message' : "success"
         }, 200
