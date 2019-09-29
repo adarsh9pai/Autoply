@@ -38,7 +38,7 @@
     "/html/body/div[1]/div/div/div[4]/form/div[2]/div[7]/label/input[3]": "Country of Residence"
   },
   {
-    "Name": "Flexport"
+    "Name": "Flexport",
     "/html/body/div[7]/div/input": "Graduation Date",
     "/html/body/div[1]/div/div/div[4]/form/div[2]/div[2]/label/div/input": "Which office location are you applying for?",
     "/html/body/div[8]/div/input": "F1/J1 Visa",
@@ -46,7 +46,7 @@
     "/html/body/div[10]/div/input": "How did you hear about this job?"
   },
   {
-    "Name": "Vimeo"
+    "Name": "Vimeo",
     "/html/body/div[1]/div/div/div[4]/form/div[2]/div[2]/label/input[3]": "Graduation Date",
     "/html/body/div[1]/div/div/div[4]/form/div[2]/div[4]/label/div/input": "Interested in backend or frontend?"
     "/html/body/div[1]/div/div/div[4]/form/div[2]/div[8]/label/div/input": "F1/J1 Visa"
