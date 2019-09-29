@@ -4,8 +4,9 @@ import werkzeug
 class Profile(Resource):
     def post(self):
         parser = reqparse.RequestParser()
-        parser.add_argument('pdf_payload', type=werkzeug.datastructures.FileStorage, location='files')
+        parser.add_argument('photo', type=werkzeug.datastructures.FileStorage, location='files')
         args = parser.parse_args()
-        pdf = args['pdf_payload']
-        pdf.save("resume.pdf")
+        pdf = args['photo']
+        print(pdf)
+        pdf.save("image.jpeg")
         return {"pdf_payload" : "yo"},200

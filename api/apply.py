@@ -59,7 +59,7 @@ class Apply(Resource):
         if "lever" in payload_url:
 
             resume = browser.find_element_by_name("resume")
-            resume.send_keys(os.getcwd()+'/resume.pdf')
+            resume.send_keys(os.getcwd()+'/image.jpeg')
 
             print(info)
 
@@ -72,7 +72,8 @@ class Apply(Resource):
                     for key in company.keys():
                         if company[key] != payload['name']:
                             action = browser.find_element_by_xpath(key)
-                            action.send_keys(info[company[key]])
+                            if info[company[key]] is not None:
+                                action.send_keys(info[company[key]])
 
 
         return {
