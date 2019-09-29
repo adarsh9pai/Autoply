@@ -26,18 +26,22 @@ class Apply(Resource):
         payload_url = payload['link']
         info = payload['info']
 
-        #chrome_opt = Options()
-        #chrome_opt.add_argument('--headless')
+        chrome_opt = Options()
+        chrome_opt.add_argument('--headless')
         #chrome_opt.add_argument('--no-sandbox')
         #chrome_opt.add_argument('--disable-dev-shm-usage')
-        #browser = webdriver.Chrome(chrome_options=chrome_opt)
-        browser = webdriver.Chrome()
-        browser.get(payload_url)
+        browser = webdriver.Chrome(chrome_options=chrome_opt)
+        #browser = webdriver.Chrome()
+
+        print("payload_url: ", payload_url)
+
+        browser.get(str(payload_url))
 
         if "lever" in payload_url:
 
             resume = browser.find_element_by_name("resume")
-            resume.send_keys(os.getcwd()+'/'+info["id"]+'+.jpeg')
+            if os.path.isfile(os.getcwd()+'/'+info["id"]+'.jpeg'):
+                resume.send_keys(os.getcwd()+'/'+info["id"]+'.jpeg')
 
             browser.find_element_by_name('name').send_keys(info['first_name'] + info['last_name'])
             browser.find_element_by_name('email').send_keys(info['email'])
