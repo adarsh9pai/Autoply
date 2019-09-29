@@ -63,6 +63,7 @@ class Apply(Resource):
             browser.find_element_by_xpath(key).send_keys(Keys.ENTER)
             browser.close()
         return {
-            'message' : payload_url
+                message : "Success",
+                job_applied_to : payload_url
         }, 200
 

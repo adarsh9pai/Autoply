@@ -7,8 +7,8 @@ import requests
 class Profile(Resource):
     def post(self):
         parser = reqparse.RequestParser()
-        parser.add_argument('id', type=str,location='form')
-        parser.add_argument('type', type=str, location='form')
+        parser.add_argument('id', type=str)
+        parser.add_argument('type', type=str)
         parser.add_argument('photo', type=werkzeug.datastructures.FileStorage, location='files')
         parser.add_argument('user', type=dict)
         args = parser.parse_args()
@@ -16,6 +16,11 @@ class Profile(Resource):
         _id = args['id']
         data = args['user']
         extension = args['type']
+
+        print(pdf)
+        print(_id)
+        print(data)
+        print(extension)
 
         if pdf is not None:
             pdf.save(_id + "." + extension)
@@ -40,5 +45,6 @@ class Profile(Resource):
             plt.imread(_id + "." + extension)
             plt.savefig(_id + ".jpg", format='jpg')
 
-        r = requests.post(url='http://localhost:5000/apply', data=data)
+        if data is not None:
+            r = requests.post(url='http://localhost:5000/apply', data=data)
         return {"pdf_payload" : "yo"},200
