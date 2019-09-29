@@ -4,7 +4,7 @@ import { Purple as Scheme } from './colorThemes'
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: 'black',
         alignItems: 'center',
     },
     googleLoginButton: {
@@ -24,7 +24,13 @@ export const styles = StyleSheet.create({
         color: '#454552',
     },
     mediumText: {
-        fontSize: 28
+        fontSize: 20
+    },
+    largeText: {
+        fontSize: 30
+    },
+    whiteText : {
+        color: 'white'
     },
     job_text: {
         fontSize: 50,
