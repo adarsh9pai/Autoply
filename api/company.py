@@ -14,8 +14,8 @@ class Company(Resource):
         collection = db.CompanyList
         all_companies = dumps(collection.find({}))
         all_companies = json.JSONDecoder().decode(all_companies)
-    
+
         return {
             "message" : "success",
-            "companies" : all_companies,
+            "list" : all_companies
         }, 200

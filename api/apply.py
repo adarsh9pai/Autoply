@@ -20,20 +20,25 @@ class Apply(Resource):
         parser = reqparse.RequestParser()
         parser.add_argument('link')
         parser.add_argument('name')
-        parser.add_argument('info',type=dict)
+        parser.add_argument('info')
         parser.add_argument('Current Company')
         parser.add_argument('Favorite Tool')
         parser.add_argument('Why Kensho')
         payload = parser.parse_args()
 
         payload_url = payload['link']
-        info = payload['info']
-        #chrome_opt = Options()
-        #chrome_opt.add_argument('--headless')
+        info = [{
+            "Current Company": payload['Current Company'],
+            "Favorite Tool": payload['Favorite Tool'],
+            "Why Kensho": payload['Why Kensho']
+        }]
+
+
+        chrome_opt = Options()
+        chrome_opt.add_argument('--headless')
         #chrome_opt.add_argument('--no-sandbox')
         #chrome_opt.add_argument('--disable-dev-shm-usage')
-        #browser = webdriver.Chrome(chrome_options=chrome_opt)
-        browser = webdriver.Chrome()
+        browser = webdriver.Chrome(chrome_options=chrome_opt)
         browser.get(payload_url)
 
         if "greenhouse" in payload_url:
@@ -56,7 +61,8 @@ class Apply(Resource):
             resume = browser.find_element_by_name("resume")
             resume.send_keys(os.getcwd()+'/image.jpeg')
 
-        
+            print(info)
+
             for companies in xpath:
                 company = None
 
@@ -66,9 +72,10 @@ class Apply(Resource):
                     for key in company.keys():
                         if company[key] != payload['name']:
                             action = browser.find_element_by_xpath(key)
-                            action.send_keys(info[company[key]])
+                            if info[company[key]] is not None:
+                                action.send_keys(info[company[key]])
 
 
         return {
-            'message' : "success"
+            'message' : payload_url
         }, 200
