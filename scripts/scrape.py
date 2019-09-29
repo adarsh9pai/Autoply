@@ -31,26 +31,8 @@ for link in internship_listings:
 
         links[link.text.lower()]['map'] = grandfather_map
         links[link.text.lower()]['resume_upload'] = 'resume'
-
-
-    elif "greenhouse.io" in link.get('href'):
-        links[link.text.lower()] = {}
-        links[link.text.lower()]['name'] = link.text
-        links[link.text.lower()]['link'] = link.get('href')
-        links[link.text.lower()]['support'] = 'True'
-
-        url = links[link.text.lower()]['link']
-        page = requests.get(url)
-        soup = BeautifulSoup(page.text, "lxml")
-        required_input = soup.find_all(lambda tag: 'required' in tag.attrs)
-        father_map = {}
-
-        for input_tag in required_input:
-            father_map[input_tag.parent.get_text()] = input_tag.attrs['id']
-
-        links[link.text.lower()]['map'] = father_map
-        links[link.text.lower()]['resume_upload'] = 'resume_chosen'
-
+        links[link.text.lower()]['logo'] = "https://logo.clearbit.com/" + links[link.text.lower()]['name'].replace(" ","")+".com"
+        
     else:
         links[link.text.lower()] = {}
         links[link.text.lower()]['name'] = link.text
