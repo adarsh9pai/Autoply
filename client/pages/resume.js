@@ -11,20 +11,20 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-//import * as ImagePicker from 'expo-image-picker'
-import * as DocumentPicker from 'expo-document-picker'
+import * as ImagePicker from 'expo-image-picker'
 import * as Permissions from 'expo-permissions';
 
-export default class App extends Component {
+export default class Resume extends Component {
   state = {
     image: null,
     uploading: false,
   };
 
+
+
   render() {
-    let {
-      image
-    } = this.state;
+    let { image } = this.state;
+
 
     return (
       <View style={styles.container}>
@@ -37,11 +37,8 @@ export default class App extends Component {
 
         <Button
           onPress={this._pickImage}
-          title="Pick an image from camera roll"
+          title="Select an image/screenshot of your resume from the Camera Roll."
         />
-
-        <Button onPress={this._takePhoto} title="Take a photo" />
-
         {this._maybeRenderImage()}
         {this._maybeRenderUploadingOverlay()}
       </View>
@@ -144,13 +141,14 @@ export default class App extends Component {
       });
 
       if (!pickerResult.cancelled) {
-        //uploadResponse = await uploadImageAsync(pickerResult.uri);
-        uploadResponse = await uploadDocumentAsync(pickerResult.uri);
+        uploadResponse = await uploadImageAsync(pickerResult.uri);
         uploadResult = await uploadResponse.json();
 
         this.setState({
           image: uploadResult.location
         });
+
+        alert('Upload Successful!')
       }
     } catch (e) {
       console.log({ uploadResponse });
@@ -181,6 +179,7 @@ async function uploadImageAsync(uri) {
   let fileType = uriParts[uriParts.length - 1];
 
   let formData = new FormData();
+  
   formData.append('photo', {
     uri,
     name: `photo.${fileType}`,

@@ -1,27 +1,54 @@
-[
-    {
-        "Name" : "Kensho",
-        "/html/body/div[2]/div/div[2]/form/div[1]/ul/li[5]/label/div[2]/input": "Current Company",
-        "/html/body/div[2]/div/div[2]/form/div[3]/ul/li[1]/div[2]/textarea": "Favorite Tool",
-        "/html/body/div[2]/div/div[2]/form/div[3]/ul/li[2]/div[2]/textarea": "Why Kensho"
-    },
-    {   
-        "Name" : "Coursera",
-        "/html/body/div[2]/div/div[2]/form/div[3]/ul/li[1]/div[2]/ul/li[1]/label/input": "F1/J1 Visa",
-        "/html/body/div[2]/div/div[2]/form/div[3]/ul/li[2]/div[2]/ul/li[2]/label/input": "US Citizenship"
-    },
-    {   
-        "Name" : "Lime",
-        "/html/body/div[2]/div/div[2]/form/div[4]/ul/li[1]/div[2]/div/select":"F1/J1 Visa",
-        "/html/body/div[2]/div/div[2]/form/div[4]/ul/li[2]/div[2]/div/select": "US Citizenship"
-    },
-    { 
-        "Name" : "Palantir",
-        "/html/body/div[2]/div/div[2]/form/div[3]/ul/li[1]/div[2]/div/select": "Country of Residence",
-        "/html/body/div[2]/div/div[2]/form/div[3]/ul/li[2]/div[2]/ul/li[1]/label/input": "Primary Language",
-        "/html/body/div[2]/div/div[2]/form/div[4]/ul/li[1]/div[2]/ul/li[1]/label/input": "F1/J1 Visa",
-        "/html/body/div[2]/div/div[2]/form/div[4]/ul/li[2]/div[2]/ul/li[1]/label/input": "US Citizenship",
-        "/html/body/div[2]/div/div[2]/form/div[6]/ul/li/div[2]/div/select": "School",
-        "/html/body/div[2]/div/div[2]/form/div[7]/ul/li/div[2]/div/select": "Linkedin"
-    }
+[{
+    "Name": "Kensho",
+    "/html/body/div[2]/div/div[2]/form/div[1]/ul/li[5]/label/div[2]/input": "Current Company",
+    "/html/body/div[2]/div/div[2]/form/div[3]/ul/li[1]/div[2]/textarea": "Favorite Tool",
+    "/html/body/div[2]/div/div[2]/form/div[3]/ul/li[2]/div[2]/textarea": "Why Kensho"
+  },
+  {
+    "Name": "Coursera",
+    "/html/body/div[2]/div/div[2]/form/div[3]/ul/li[1]/div[2]/ul/li[1]/label/input": "F1/J1 Visa",
+    "/html/body/div[2]/div/div[2]/form/div[3]/ul/li[2]/div[2]/ul/li[2]/label/input": "US Citizenship"
+  },
+  {
+    "Name": "Lime",
+    "/html/body/div[2]/div/div[2]/form/div[4]/ul/li[1]/div[2]/div/select": "F1/J1 Visa",
+    "/html/body/div[2]/div/div[2]/form/div[4]/ul/li[2]/div[2]/div/select": "US Citizenship"
+  },
+  {
+    "Name": "Palantir",
+    "/html/body/div[2]/div/div[2]/form/div[3]/ul/li[1]/div[2]/div/select": "Country of Residence",
+    "/html/body/div[2]/div/div[2]/form/div[3]/ul/li[2]/div[2]/ul/li[1]/label/input": "Primary Language",
+    "/html/body/div[2]/div/div[2]/form/div[4]/ul/li[1]/div[2]/ul/li[1]/label/input": "F1/J1 Visa",
+    "/html/body/div[2]/div/div[2]/form/div[4]/ul/li[2]/div[2]/ul/li[1]/label/input": "US Citizenship",
+    "/html/body/div[2]/div/div[2]/form/div[6]/ul/li/div[2]/div/select": "School",
+    "/html/body/div[2]/div/div[2]/form/div[7]/ul/li/div[2]/div/select": "Linkedin"
+  },
+  {
+    "Name": "Lyft",
+    "/html/body/div[8]/div/input": "What is your anticipated graduation year?",
+    "/html/body/div[1]/div/div/div[4]/form/div[2]/div[3]/label/div/input": "Current University:",
+    "/html/body/div[1]/div/div/div[4]/form/div[2]/div[5]/label/input[3]": "Resolving Conflicts",
+    "/html/body/div[1]/div/div/div[4]/form/div[2]/div[6]/label/div/input": "Work Authorization"
+  },
+  {
+    "Name": "Postmates",
+    "/html/body/div[1]/div/div/div[4]/form/div[2]/div[3]/label/input[3]": "How did you hear about this job?",
+    "/html/body/div[1]/div/div/div[4]/form/div[2]/div[5]/label/input[3]": "Expected Graduation (MM/YYYY)",
+    "/html/body/div[1]/div/div/div[4]/form/div[2]/div[6]/label/input[3]": "Country of Citizenship",
+    "/html/body/div[1]/div/div/div[4]/form/div[2]/div[7]/label/input[3]": "Country of Permanent Residence"
+  },
+  {
+    "Name": "Flexport"
+    "/html/body/div[7]/div/input": "/html/body/div[7]/div/input",
+    "/html/body/div[1]/div/div/div[4]/form/div[2]/div[2]/label/div/input": "Which office location are you applying for?",
+    "/html/body/div[8]/div/input": "Are you authorized to work lawfully in the United States for Flexport?",
+    "/html/body/div[9]/div/input": "Future H1B",
+    "/html/body/div[10]/div/input": "How did you first hear about Flexport?"
+  },
+  {
+    "Name": "Vimeo"
+    "/html/body/div[1]/div/div/div[4]/form/div[2]/div[2]/label/input[3]": "Graduation Date",
+    "/html/body/div[1]/div/div/div[4]/form/div[2]/div[4]/label/div/input": "What area of engineering would you like to focus on over the summer?"
+    "/html/body/div[1]/div/div/div[4]/form/div[2]/div[8]/label/div/input": "Work Authorization"
+  }
 ]
