@@ -385,6 +385,8 @@ class DataEntry extends Component {
         const photoUrl = JSON.stringify(this.props.navigation.getParam('photoUrl')).substring(1, urlLength - 1)
         const idLength = JSON.stringify(this.props.navigation.getParam('id')).length
         const id = JSON.stringify(this.props.navigation.getParam('id')).substring(1, idLength - 1)
+        const firstName = name.split(' ').slice(0, -1).join(' ');
+        const lastName = name.split(' ').slice(-1).join(' ');
 
         const user = {
             ...this.state,

@@ -16,7 +16,7 @@ const initState = {
 }
 
 export const RootReducer = (state = initState, action) => {
-
+    console.log('ran this')
     switch (action.type) {
         case 'ADD_USER':
             console.log('action', action)

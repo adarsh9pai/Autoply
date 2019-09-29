@@ -44,44 +44,25 @@ class ProfileScreen extends Component {
           editable={false}
         />
 
-        {
-          user.urlGithub.length ?
+        <TextInput
+          style={styles.textInput}
+          maxLength={100}
+          value="Github"
+          editable={false}
+        />
 
-            <TextInput
-              style={styles.textInput}
-              maxLength={100}
-              value="Github"
-              editable={false}
-            />
-
-            :
-            <View />
-        }{
-          user.urlLinkedin.length ?
-
-            <TextInput
-              style={styles.textInput}
-              maxLength={100}
-              value="Linkedin"
-              editable={false}
-            />
-
-            :
-            <View />
-        }{
-          user.urlPortfolio.length ?
-
-            <TextInput
-              style={styles.textInput}
-              maxLength={100}
-              value="Portfolio"
-              editable={false}
-            />
-
-            :
-            <View />
-        }
-
+        <TextInput
+          style={styles.textInput}
+          maxLength={100}
+          value="Linkedin"
+          editable={false}
+        />
+        <TextInput
+          style={styles.textInput}
+          maxLength={100}
+          value="Portfolio"
+          editable={false}
+        />
         <Button
           title='Edit'
           onPress={this.onSubmit}
