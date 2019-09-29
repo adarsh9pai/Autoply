@@ -52,11 +52,13 @@ export const styles = StyleSheet.create({
         height: 50,
         fontSize: 25,
         paddingLeft: 20,
-        paddingRight: 20
+        paddingRight: 20,
+        color: 'white'
     },
     profileText: {
         paddingLeft: 10,
         fontSize: 15,
+        color: 'white'
     },
     profilePicture: {
         marginTop: 15,
