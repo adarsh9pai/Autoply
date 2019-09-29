@@ -13,9 +13,10 @@ class Company(Resource):
         db = client.get_database('AutoplyDB')
         collection = db.CompanyList
         all_companies = dumps(collection.find({}))
-        all_companies = json.JSONDecoder().decode(all_companies)
+        #all_companies = json.JSONDecoder().decode(all_companies)
+
+        print(all_companies)
     
         return {
             "message" : "success",
-            "companies" : all_companies,
         }, 200
