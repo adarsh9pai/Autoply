@@ -14,6 +14,13 @@ links = {}
 unique_questions = set()
 
 for link in internship_listings:
+    img_url = link.get('href')
+    img_page = requests.get(img_url)
+    img_soup = BeautifulSoup(img_page.text, "lxml")  
+    logo = img_soup.img
+
+    
+
     if "lever.co" in link.get('href'):
         links[link.text.lower()] = {}
         links[link.text.lower()]['name'] = link.text
@@ -55,7 +62,9 @@ for link in internship_listings:
         links[link.text.lower()]['name'] = link.text
         links[link.text.lower()]['link'] = link.get('href')
         links[link.text.lower()]['support'] = 'False'
-        
+    
+    
+
         '''
         url = links[link.text.lower()]['link']
         page = requests.get(url)
@@ -66,6 +75,8 @@ for link in internship_listings:
             if textarea.parent.parent.get_text() is not None:
                 unique_questions.add(textarea.parent.parent.get_text())
         '''
+
+    links[link.text.lower()]['img'] = logo
 
 
 data = []
