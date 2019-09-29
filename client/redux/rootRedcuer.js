@@ -21,12 +21,6 @@ const initState = {
             "logo": "https://logo.clearbit.com/AmericanExpress.com"
         },
         {
-            "name": "Groceristar",
-            "link": "https://angel.co/company/groceristar/jobs",
-            "support": "False",
-            "logo": "https://logo.clearbit.com/Groceristar.com"
-        },
-        {
             "name": "Goldman Sachs",
             "link": "https://goldmansachs.tal.net/vx/lang-en-GB/mobile-0/brand-2/user-1414453/candidate/so/pm/1/pl/1/opp/2-Summer-Analyst-Summer-Associate-Internship-programs/en-GB",
             "support": "False",
@@ -246,14 +240,6 @@ const initState = {
             "link": "https://www.squarespace.com/careers/jobs/1852871?gh_src=afe793d31",
             "support": "False",
             "logo": "https://logo.clearbit.com/Squarespace.com"
-        },
-        {
-            "name": "Petal",
-            "link": "https://jobs.lever.co/petalcard/907525c3-7bd3-40d4-98a9-636304415e4f/apply/apply",
-            "support": "True",
-            "map": {},
-            "resume_upload": "resume",
-            "logo": "https://logo.clearbit.com/Petal.com"
         },
         {
             "name": "MongoDB",

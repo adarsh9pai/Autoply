@@ -107,44 +107,31 @@ class JobScreen extends React.Component {
             {...this.PanResponder.panHandlers}
             key={job.id}
             style={[this.rotateAndTranslate, {
-              height: SCREEN_HEIGHT * 0.50, width: SCREEN_WIDTH, padding: 10, position: 'absolute', flex: 1,
+              height: SCREEN_HEIGHT * 0.60, width: SCREEN_WIDTH * 0.90, position: 'absolute', flex: 1,
               flexDirection: 'column',
               alignItems: 'center',
+              backgroundColor: 'black',
+              borderRadius: 50,
+              marginTop: 20,
+              marginLeft: SCREEN_WIDTH * 0.05
             }]}>
+
             <Avatar containerStyle={{ paddingTop: 15, paddingLeft: 20 }} size='xlarge' rounded source={{ uri: job.logo }} />
-            
-            
-            <Text>Software Engineering Intern, 2020</Text>
-            
+            <View style={{paddingTop: 10}} />
+
+            <Text style={{ color: 'white', fontSize: 25 }}>Software Engineering Intern</Text>
+
             <Text style={styles.job_text}>
               {job.name}
             </Text>
-            {/* <ImageBackground style={{ height: '100%' }} imageStyle={styles.job_image}
-              source={{ uri: job.logo }}>
-            </ImageBackground> */}
-
           </Animated.View >
         )
       }
       else {
         return (
-          <Animated.View
-            key={job.id} style={[{
-              opacity: this.nextCardOpacity,
-              transform: [{ scale: this.nextCardScale }],
-              height: SCREEN_HEIGHT * 0.50, width: SCREEN_WIDTH, padding: 10, position: 'absolute'
-            }]}>
-          
-          <Avatar containerStyle={{ paddingTop: 15, paddingLeft: 20 }} size='xlarge' rounded source={{ uri: job.logo }} />
-              
-              
-              <Text >Software Engineering Intern, 2020</Text>
-              
-              <Text style={styles.job_text}>
-                {job.name}
-              </Text>
-            
-          </Animated.View>
+          <View>
+
+          </View>
         )
       }
     }).reverse()
@@ -152,12 +139,15 @@ class JobScreen extends React.Component {
 
   onRightSwipe = e => {
     currPost = this.props.jobs[this.state.currentIndex]
+    console.log(currPost.link)
 
-    if (currPost.support) {
+    if (currPost.support === 'False') {
       this.props.navigation.navigate('WebView', currPost)
-      console.log('its supported')
     } else {
-      this.props.navigation.navigate('Web', currPost)
+
+      
+      console.log('its supported')
+      // this.props.navigation.navigate('Web', currPost)
     }
   }
 
