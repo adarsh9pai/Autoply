@@ -1,14 +1,39 @@
 [{
-    "Name": "Figma"
+    "Name": "Figma",
+    "/html/body/div[2]/div/div[2]/form/div[5]/button": "button"
   },
   {
-    "Name": "Rimeto"
+    "Name": "Rimeto",
+    "/html/body/div[2]/div/div[2]/form/div[5]/button": "button"
   },
   {
-    "Name": "CTRL-Lab"
+    "Name": "CTRL-Lab",
+    "/html/body/div[2]/div/div[2]/form/div[6]/button": "button"
   },
   {
     "Name": "Wish",
-    "/html/body/div[2]/div/div[2]/form/div[1]/ul/li[6]/label/div[2]/input": "Current Company"
+    "/html/body/div[2]/div/div[2]/form/div[1]/ul/li[6]/label/div[2]/input": "currentCompany",
+    "/html/body/div[2]/div/div[2]/form/div[5]/button": "button"
+  },
+  {
+    "Name": "SigOpt",
+    "/html/body/div[2]/div/div[2]/form/div[5]/button": "button"
+  },
+  {
+    "Name": "Petal",
+    "/html/body/div[2]/div/div[2]/form/div[5]/button": "button"
+  },
+  {
+    "Name": "Tubular Labs",
+    "/html/body/div[2]/div/div[2]/form/div[6]/button": "button"
+  },
+  {
+    "Name": "Cambly",
+    "/html/body/div[2]/div/div[2]/form/div[6]/button": "button"
+  },
+  {
+    "Name": "Transfix",
+    "/html/body/div[2]/div/div[2]/form/div[2]/ul/li[1]/label/div[2]/input": "linkedinUrl",
+    "/html/body/div[2]/div/div[2]/form/div[5]/button": "button"
   }
 ]

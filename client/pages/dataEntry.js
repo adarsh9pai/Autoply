@@ -10,7 +10,7 @@ import {
     ScrollView
 } from 'react-native'
 import { styles } from '../styles/styles'
-import { Purple as Theme } from '../styles/colorThemes'
+import { Black as Theme } from '../styles/colorThemes'
 import { Avatar } from 'react-native-elements'
 import { connect } from 'react-redux'
 import * as ImagePicker from 'expo-image-picker'
@@ -113,7 +113,7 @@ class DataEntry extends Component {
         let { image } = this.state
 
         return (
-            <ScrollView>
+            <ScrollView style={{backgroundColor: Theme.mainColor}}>
                 <Avatar
                     size="large"
                     containerStyle={styles.profilePicture}
