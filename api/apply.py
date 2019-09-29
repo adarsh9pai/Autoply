@@ -27,11 +27,11 @@ class Apply(Resource):
         payload = parser.parse_args()
 
         payload_url = payload['link']
-        info = {
+        info = [{
             "Current Company": payload['Current Company'],
             "Favorite Tool": payload['Favorite Tool'],
             "Why Kensho": payload['Why Kensho']
-        }
+        }]
 
 
         chrome_opt = Options()
@@ -59,7 +59,7 @@ class Apply(Resource):
         if "lever" in payload_url:
 
             resume = browser.find_element_by_name("resume")
-            resume.send_keys(os.getcwd()+'/resume.pdf')
+            resume.send_keys(os.getcwd()+'/image.jpeg')
 
             print(info)
 
