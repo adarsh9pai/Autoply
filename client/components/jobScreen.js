@@ -93,8 +93,8 @@ class JobScreen extends React.Component {
     })
   }
 
-  renderUsers = (props) => {
-    return props.jobs.map((job, i) => {
+  renderUsers = (jobs) => {
+    return jobs.map((job, i) => {
 
 
       if (i < this.state.currentIndex) {
@@ -155,18 +155,23 @@ class JobScreen extends React.Component {
   }
 
   render() {
+    const { companies } = this.props
     return (
-      <View>
-        {this.renderUsers(this.props)}
-      </View>
+
+      companies ?
+        <View>
+          {this.renderUsers(companies)}
+        </View> :
+        <View />
     )
   }
 }
 
 
 const maptStateToProps = (state) => {
+  console.log(state)
   return {
-    jobs: state.jobs
+    jobs: state.companies
   }
 }
 
