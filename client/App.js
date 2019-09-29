@@ -1,6 +1,4 @@
 import React from 'react'
-import { Text, View } from 'react-native'
-import { styles } from './styles/styles'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import { RootReducer } from './redux/rootRedcuer'
@@ -8,9 +6,8 @@ import { createAppContainer } from 'react-navigation'
 import { createStackNavigator } from 'react-navigation-stack'
 import HomeScreen from './pages/homeScreen'
 import MainScreen from './pages/bottomNavigation'
-import EntryScreen from './pages/dataEntry'
+import DataEntry from './pages/dataEntry'
 import WebScreen from './pages/webScreen'
-import Resume from './pages/resume'
 
 
 const store = createStore(RootReducer)
@@ -24,11 +21,18 @@ export default function App() {
 }
 
 const MainNavigator = createStackNavigator({
-  Home: { screen: HomeScreen },
-  Resume: { screen: Resume },
   MainScreen: { screen: MainScreen },
-  DataEntry: {screen: EntryScreen},
+  Home: { screen: HomeScreen },
+  DataEntry: { screen: DataEntry },
   Web: { screen: WebScreen },
+},
+{
+  defaultNavigationOptions: {
+    headerTintColor: 'white',
+    headerStyle: {
+      backgroundColor: '#000'
+    }
+  }
 })
 
-const NavApp = createAppContainer(MainNavigator)
+const NavApp = createAppContainer(MainNavigator, { tintColor: 'black'})

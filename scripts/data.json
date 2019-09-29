@@ -103,17 +103,8 @@
             "Full name\u2731": "name",
             "Email\u2731": "email"
         },
-        "resume_upload": "resume"
-    },
-    {
-        "name": "Rimeto",
-        "link": "https://jobs.lever.co/rimeto/d357c4b5-5a3e-4c75-84fd-057d2051cd92/apply",
-        "support": "True",
-        "map": {
-            "Full name\u2731": "name",
-            "Email\u2731": "email"
-        },
-        "resume_upload": "resume"
+        "resume_upload": "resume",
+        "logo": "https://logo.clearbit.com/Rimeto.com"
     },
     {
         "name": "Facebook",
@@ -142,38 +133,14 @@
     {
         "name": "Duolingo",
         "link": "https://boards.greenhouse.io/duolingo/jobs/4351727002",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/Duolingo.com"
     },
     {
         "name": "Robinhood",
         "link": "https://boards.greenhouse.io/robinhood/jobs/1739582",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
-    },
-    {
-        "name": "Duolingo",
-        "link": "https://boards.greenhouse.io/duolingo/jobs/4351727002",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
-    },
-    {
-        "name": "Robinhood",
-        "link": "https://boards.greenhouse.io/robinhood/jobs/1739582",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/Robinhood.com"
     },
     {
         "name": "Morgan Stanley",
@@ -196,20 +163,8 @@
     {
         "name": "Virtu Financial",
         "link": "https://boards.greenhouse.io/virtu/jobs/4367942002",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
-    },
-    {
-        "name": "Virtu Financial",
-        "link": "https://boards.greenhouse.io/virtu/jobs/4367942002",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/VirtuFinancial.com"
     },
     {
         "name": "Citadel",
@@ -286,43 +241,20 @@
     {
         "name": "Qualtrics",
         "link": "https://boards.greenhouse.io/qualtrics/jobs/755570?t=edd9906d1",
-        "support": "True",
-        "map": {},
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/Qualtrics.com"
     },
     {
         "name": "Databricks",
         "link": "https://boards.greenhouse.io/databricks/jobs/4374189002?gh_src=62a881d62",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
-    },
-    {
-        "name": "Qualtrics",
-        "link": "https://boards.greenhouse.io/qualtrics/jobs/755570?t=edd9906d1",
-        "support": "True",
-        "map": {},
-        "resume_upload": "resume_chosen"
-    },
-    {
-        "name": "Databricks",
-        "link": "https://boards.greenhouse.io/databricks/jobs/4374189002?gh_src=62a881d62",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/Databricks.com"
     },
     {
         "name": "Twitch",
         "link": "https://boards.greenhouse.io/twitch/jobs/4387419002",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/Twitch.com"
     },
     {
         "name": "Amazon",
@@ -339,9 +271,8 @@
     {
         "name": "Flexport",
         "link": "https://boards.greenhouse.io/flexport/jobs/1802354",
-        "support": "True",
-        "map": {},
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/Flexport.com"
     },
     {
         "name": "Qualcomm",
@@ -360,20 +291,8 @@
             "No": "cards[cc8af687-6db0-4331-84ea-cdd0356bf325][field1]",
             " What is your expected date of graduation? (month, year)\u2731": "cards[cc8af687-6db0-4331-84ea-cdd0356bf325][field4]"
         },
-        "resume_upload": "resume"
-    },
-    {
-        "name": "Atlassian",
-        "link": "https://jobs.lever.co/atlassian/9484630b-4039-415e-af9a-c1e2c34e5a8b/apply",
-        "support": "True",
-        "map": {
-            "Full name\u2731": "name",
-            "Email\u2731": "email",
-            "Yes": "cards[cc8af687-6db0-4331-84ea-cdd0356bf325][field1]",
-            "No": "cards[cc8af687-6db0-4331-84ea-cdd0356bf325][field1]",
-            " What is your expected date of graduation? (month, year)\u2731": "cards[cc8af687-6db0-4331-84ea-cdd0356bf325][field4]"
-        },
-        "resume_upload": "resume"
+        "resume_upload": "resume",
+        "logo": "https://logo.clearbit.com/Atlassian.com"
     },
     {
         "name": "Capital One",
@@ -395,17 +314,8 @@
             "Full name\u2731": "name",
             "Email\u2731": "email"
         },
-        "resume_upload": "resume"
-    },
-    {
-        "name": "Figma",
-        "link": "https://jobs.lever.co/figma/91da97b9-ff1d-4e08-a2f1-4867537e5eb2/apply",
-        "support": "True",
-        "map": {
-            "Full name\u2731": "name",
-            "Email\u2731": "email"
-        },
-        "resume_upload": "resume"
+        "resume_upload": "resume",
+        "logo": "https://logo.clearbit.com/Figma.com"
     },
     {
         "name": "Cisco",
@@ -424,29 +334,14 @@
             "Current company \u2731": "org",
             "LinkedIn URL\u2731": "urls[LinkedIn]"
         },
-        "resume_upload": "resume"
-    },
-    {
-        "name": "Wish",
-        "link": "https://jobs.lever.co/wish/a7c634f6-40d6-43cd-828a-dc0bfc8b33a8/apply",
-        "support": "True",
-        "map": {
-            "Full name\u2731": "name",
-            "Email\u2731": "email",
-            "Phone \u2731": "phone",
-            "Current company \u2731": "org",
-            "LinkedIn URL\u2731": "urls[LinkedIn]"
-        },
-        "resume_upload": "resume"
+        "resume_upload": "resume",
+        "logo": "https://logo.clearbit.com/Wish.com"
     },
     {
         "name": "Samsara",
         "link": "https://boards.greenhouse.io/samsara/jobs/1818392",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/Samsara.com"
     },
     {
         "name": "Konami",
@@ -471,7 +366,8 @@
         "link": "https://jobs.lever.co/palantir/d39b3432-8742-4df0-b97f-47ab4122cd05/apply/apply",
         "support": "True",
         "map": {},
-        "resume_upload": "resume"
+        "resume_upload": "resume",
+        "logo": "https://logo.clearbit.com/Palantir.com"
     },
     {
         "name": "Five Rings Capital",
@@ -518,16 +414,14 @@
     {
         "name": "Thumbtack",
         "link": "https://boards.greenhouse.io/thumbtack/jobs/1814883",
-        "support": "True",
-        "map": {},
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/Thumbtack.com"
     },
     {
         "name": "Gusto",
         "link": "https://boards.greenhouse.io/gusto/jobs/1823034",
-        "support": "True",
-        "map": {},
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/Gusto.com"
     },
     {
         "name": "Yelp",
@@ -580,11 +474,8 @@
     {
         "name": "Quorum",
         "link": "https://boards.greenhouse.io/quorum/jobs/599939?gh_jid=599939",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/Quorum.com"
     },
     {
         "name": "The Home Depot",
@@ -597,23 +488,14 @@
         "link": "https://jobs.lever.co/retailmenot/13c1b9e0-d1f7-42a3-b60c-c7fe66e4f0f8/apply/apply",
         "support": "True",
         "map": {},
-        "resume_upload": "resume"
-    },
-    {
-        "name": "RetailMeNot, Inc.",
-        "link": "https://jobs.lever.co/retailmenot/13c1b9e0-d1f7-42a3-b60c-c7fe66e4f0f8/apply/apply",
-        "support": "True",
-        "map": {},
-        "resume_upload": "resume"
+        "resume_upload": "resume",
+        "logo": "https://logo.clearbit.com/RetailMeNot,Inc..com"
     },
     {
         "name": "Sony Interactive Entertainment PlayStation",
         "link": "https://boards.greenhouse.io/sonyinteractiveentertainmentplaystation/jobs/1833253",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/SonyInteractiveEntertainmentPlayStation.com"
     },
     {
         "name": "Quantcast",
@@ -636,11 +518,8 @@
     {
         "name": "Postmates",
         "link": "https://boards.greenhouse.io/postmates/jobs/1134685",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/Postmates.com"
     },
     {
         "name": "Nuro",
@@ -663,9 +542,8 @@
     {
         "name": "WeRide.ai",
         "link": "https://boards.greenhouse.io/jingchicorp/jobs/1448478?gh_src=c6dae5a61",
-        "support": "True",
-        "map": {},
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/WeRide.ai.com"
     },
     {
         "name": "Jump Trading",
@@ -702,32 +580,8 @@
             "Summer": "cards[e3b6c1a2-0e94-4976-a8fd-abf6de8259db][field0]",
             "Fall": "cards[e3b6c1a2-0e94-4976-a8fd-abf6de8259db][field0]"
         },
-        "resume_upload": "resume"
-    },
-    {
-        "name": "SelfMade",
-        "link": "https://jobs.lever.co/selfmade/bca70f35-f732-4ecb-981e-b847fc9b5809/apply",
-        "support": "True",
-        "map": {
-            "Full name\u2731": "name",
-            "Email\u2731": "email",
-            "Phone \u2731": "phone",
-            "LinkedIn": "cards[93e50f0c-43ae-4f7b-985b-16c669b26feb][field0]",
-            "TechCrunch": "cards[93e50f0c-43ae-4f7b-985b-16c669b26feb][field0]",
-            "Women In Tech": "cards[93e50f0c-43ae-4f7b-985b-16c669b26feb][field0]",
-            "AngelList": "cards[93e50f0c-43ae-4f7b-985b-16c669b26feb][field0]",
-            "Referral": "cards[93e50f0c-43ae-4f7b-985b-16c669b26feb][field0]",
-            "Glassdoor": "cards[93e50f0c-43ae-4f7b-985b-16c669b26feb][field0]",
-            "BuiltInNYC": "cards[93e50f0c-43ae-4f7b-985b-16c669b26feb][field0]",
-            "Handshake": "cards[93e50f0c-43ae-4f7b-985b-16c669b26feb][field0]",
-            "We reached out to you": "cards[93e50f0c-43ae-4f7b-985b-16c669b26feb][field0]",
-            "Other": "cards[93e50f0c-43ae-4f7b-985b-16c669b26feb][field0]",
-            "Winter": "cards[e3b6c1a2-0e94-4976-a8fd-abf6de8259db][field0]",
-            "Spring": "cards[e3b6c1a2-0e94-4976-a8fd-abf6de8259db][field0]",
-            "Summer": "cards[e3b6c1a2-0e94-4976-a8fd-abf6de8259db][field0]",
-            "Fall": "cards[e3b6c1a2-0e94-4976-a8fd-abf6de8259db][field0]"
-        },
-        "resume_upload": "resume"
+        "resume_upload": "resume",
+        "logo": "https://logo.clearbit.com/SelfMade.com"
     },
     {
         "name": "NerdWallet",
@@ -738,11 +592,8 @@
     {
         "name": "Lyft",
         "link": "https://boards.greenhouse.io/lyft/jobs/4358047002",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/Lyft.com"
     },
     {
         "name": "Valkyrie",
@@ -759,9 +610,8 @@
     {
         "name": "Sumo Logic",
         "link": "https://boards.greenhouse.io/sumologic/",
-        "support": "True",
-        "map": {},
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/SumoLogic.com"
     },
     {
         "name": "DeepMind",
@@ -772,11 +622,8 @@
     {
         "name": "MemSQL",
         "link": "https://boards.greenhouse.io/memsql/jobs/1666552",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/MemSQL.com"
     },
     {
         "name": "Bloomberg",
@@ -787,11 +634,8 @@
     {
         "name": "Yext",
         "link": "https://boards.greenhouse.io/embed/job_app?token=1808516",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/Yext.com"
     },
     {
         "name": "Palo Alto Networks",
@@ -800,14 +644,15 @@
         "logo": "https://logo.clearbit.com/PaloAltoNetworks.com"
     },
     {
-        "name": "Lime",
+        "name": "Limebike",
         "link": "https://jobs.lever.co/limebike/abbcff74-b22f-4a84-84d6-1bc3919eabb1/apply",
         "support": "True",
         "map": {
             "Full name\u2731": "name",
             "Email\u2731": "email"
         },
-        "resume_upload": "resume"
+        "resume_upload": "resume",
+        "logo": "https://logo.clearbit.com/Lime.com"
     },
     {
         "name": "Lucid Software",
@@ -826,7 +671,8 @@
             "Yes": "cards[1a47e353-e9d4-42ac-92a0-7433a319d0bc][field1]",
             "No": "cards[1a47e353-e9d4-42ac-92a0-7433a319d0bc][field1]"
         },
-        "resume_upload": "resume"
+        "resume_upload": "resume",
+        "logo": "https://logo.clearbit.com/Coursera.com"
     },
     {
         "name": "Asana",
@@ -860,17 +706,8 @@
             "Full name\u2731": "name",
             "Email\u2731": "email"
         },
-        "resume_upload": "resume"
-    },
-    {
-        "name": "Affirm",
-        "link": "https://jobs.lever.co/affirm/5340f1d3-cd6d-44ef-a5c6-f9def8609d02/apply",
-        "support": "True",
-        "map": {
-            "Full name\u2731": "name",
-            "Email\u2731": "email"
-        },
-        "resume_upload": "resume"
+        "resume_upload": "resume",
+        "logo": "https://logo.clearbit.com/Affirm.com"
     },
     {
         "name": "WillowTree",
@@ -904,17 +741,8 @@
             "Full name\u2731": "name",
             "Email\u2731": "email"
         },
-        "resume_upload": "resume"
-    },
-    {
-        "name": "CTRL-Lab",
-        "link": "https://jobs.lever.co/ctrl-labs/9218edb0-e31a-452c-8949-66d59e40423c/apply",
-        "support": "True",
-        "map": {
-            "Full name\u2731": "name",
-            "Email\u2731": "email"
-        },
-        "resume_upload": "resume"
+        "resume_upload": "resume",
+        "logo": "https://logo.clearbit.com/CTRL-Lab.com"
     },
     {
         "name": "BookBub",
@@ -931,9 +759,8 @@
     {
         "name": "Betterment",
         "link": "https://boards.greenhouse.io/betterment/jobs/1836744?gh_jid=1836744",
-        "support": "True",
-        "map": {},
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/Betterment.com"
     },
     {
         "name": "Tableau",
@@ -944,9 +771,8 @@
     {
         "name": "Pivotal",
         "link": "https://boards.greenhouse.io/embed/job_app?token=1851404",
-        "support": "True",
-        "map": {},
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/Pivotal.com"
     },
     {
         "name": "Plaid",
@@ -957,11 +783,8 @@
     {
         "name": "Lyft Level 5",
         "link": "https://boards.greenhouse.io/embed/job_app?token=4417366002&gh_src=uwvxb4jc2",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/LyftLevel5.com"
     },
     {
         "name": "Riot Games",
@@ -1020,11 +843,8 @@
     {
         "name": "Kiva",
         "link": "https://boards.greenhouse.io/kivaorg/jobs/1845233",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/Kiva.com"
     },
     {
         "name": "SigOpt",
@@ -1035,7 +855,8 @@
             "Email\u2731": "email",
             "Phone \u2731": "phone"
         },
-        "resume_upload": "resume"
+        "resume_upload": "resume",
+        "logo": "https://logo.clearbit.com/SigOpt.com"
     },
     {
         "name": "datto",
@@ -1046,11 +867,8 @@
     {
         "name": "Karat",
         "link": "https://boards.greenhouse.io/karat/jobs/4252508002",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/Karat.com"
     },
     {
         "name": "Illumio",
@@ -1075,14 +893,8 @@
         "link": "https://jobs.lever.co/petalcard/907525c3-7bd3-40d4-98a9-636304415e4f/apply/apply",
         "support": "True",
         "map": {},
-        "resume_upload": "resume"
-    },
-    {
-        "name": "Petal",
-        "link": "https://jobs.lever.co/petalcard/907525c3-7bd3-40d4-98a9-636304415e4f/apply/apply",
-        "support": "True",
-        "map": {},
-        "resume_upload": "resume"
+        "resume_upload": "resume",
+        "logo": "https://logo.clearbit.com/Petal.com"
     },
     {
         "name": "InterSystems",
@@ -1113,14 +925,8 @@
         "link": "https://jobs.lever.co/etsy/44a07d1f-d198-4a2a-9c28-64d0ad7db531/apply/apply",
         "support": "True",
         "map": {},
-        "resume_upload": "resume"
-    },
-    {
-        "name": "Etsy",
-        "link": "https://jobs.lever.co/etsy/44a07d1f-d198-4a2a-9c28-64d0ad7db531/apply/apply",
-        "support": "True",
-        "map": {},
-        "resume_upload": "resume"
+        "resume_upload": "resume",
+        "logo": "https://logo.clearbit.com/Etsy.com"
     },
     {
         "name": "Kabbage",
@@ -1137,18 +943,14 @@
     {
         "name": "C3.ai",
         "link": "https://boards.greenhouse.io/c3iot/jobs/4086849002",
-        "support": "True",
-        "map": {},
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/C3.ai.com"
     },
     {
         "name": "Pocket Gems",
         "link": "https://boards.greenhouse.io/pocketgems/jobs/1849185?gh_src=%5Bu%270c25bb191%27%5D",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/PocketGems.com"
     },
     {
         "name": "CME Group",
@@ -1200,17 +1002,8 @@
             "Full name\u2731": "name",
             "Email\u2731": "email"
         },
-        "resume_upload": "resume"
-    },
-    {
-        "name": "Tubular Labs",
-        "link": "https://jobs.lever.co/tubularlabs/f3907864-0713-4fe0-b70d-4859b54d2d5e/apply",
-        "support": "True",
-        "map": {
-            "Full name\u2731": "name",
-            "Email\u2731": "email"
-        },
-        "resume_upload": "resume"
+        "resume_upload": "resume",
+        "logo": "https://logo.clearbit.com/TubularLabs.com"
     },
     {
         "name": "Rubrik",
@@ -1221,11 +1014,8 @@
     {
         "name": "Pure Storage",
         "link": "https://boards.greenhouse.io/purestorage/jobs/1852570",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/PureStorage.com"
     },
     {
         "name": "GrammaTech",
@@ -1256,32 +1046,8 @@
             "1-3 months": "cards[97a07992-1118-4b26-bd0a-806f403a7f7f][field0]",
             "More": "cards[97a07992-1118-4b26-bd0a-806f403a7f7f][field0]"
         },
-        "resume_upload": "resume"
-    },
-    {
-        "name": "Huobi",
-        "link": "https://jobs.lever.co/huobi/c454e383-9302-4bec-88c0-7a9f749cb5f9/apply",
-        "support": "True",
-        "map": {
-            "Full name\u2731": "name",
-            "Email\u2731": "email",
-            "Phone \u2731": "phone",
-            "Current company \u2731": "org",
-            "LinkedIn URL\u2731": "urls[LinkedIn]",
-            "US Citizen": "cards[cd21ed92-25e0-4bd7-8d72-a658dfacd0dc][field1]",
-            "Green Card": "cards[cd21ed92-25e0-4bd7-8d72-a658dfacd0dc][field1]",
-            "H1B": "cards[cd21ed92-25e0-4bd7-8d72-a658dfacd0dc][field1]",
-            "H4": "cards[cd21ed92-25e0-4bd7-8d72-a658dfacd0dc][field1]",
-            "OPT/CPT": "cards[cd21ed92-25e0-4bd7-8d72-a658dfacd0dc][field1]",
-            "Others": "cards[cd21ed92-25e0-4bd7-8d72-a658dfacd0dc][field1]",
-            "No": "cards[cd21ed92-25e0-4bd7-8d72-a658dfacd0dc][field2]",
-            "Yes": "cards[cd21ed92-25e0-4bd7-8d72-a658dfacd0dc][field2]",
-            "within 2 weeks": "cards[97a07992-1118-4b26-bd0a-806f403a7f7f][field0]",
-            "~1 month": "cards[97a07992-1118-4b26-bd0a-806f403a7f7f][field0]",
-            "1-3 months": "cards[97a07992-1118-4b26-bd0a-806f403a7f7f][field0]",
-            "More": "cards[97a07992-1118-4b26-bd0a-806f403a7f7f][field0]"
-        },
-        "resume_upload": "resume"
+        "resume_upload": "resume",
+        "logo": "https://logo.clearbit.com/Huobi.com"
     },
     {
         "name": "Honey",
@@ -1315,24 +1081,14 @@
             "Full name\u2731": "name",
             "Email\u2731": "email"
         },
-        "resume_upload": "resume"
-    },
-    {
-        "name": "Cambly",
-        "link": "https://jobs.lever.co/cambly/21350d5c-8ef0-4284-8348-8d3218d24ecd/apply",
-        "support": "True",
-        "map": {
-            "Full name\u2731": "name",
-            "Email\u2731": "email"
-        },
-        "resume_upload": "resume"
+        "resume_upload": "resume",
+        "logo": "https://logo.clearbit.com/Cambly.com"
     },
     {
         "name": "Cogo Labs",
         "link": "https://boards.greenhouse.io/cogolabs",
-        "support": "True",
-        "map": {},
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/CogoLabs.com"
     },
     {
         "name": "Expedia",
@@ -1373,18 +1129,14 @@
     {
         "name": "Kleiner Perkins Fellows Program",
         "link": "https://boards.greenhouse.io/2020kpfellows",
-        "support": "True",
-        "map": {},
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/KleinerPerkinsFellowsProgram.com"
     },
     {
         "name": "Vimeo",
         "link": "https://boards.greenhouse.io/vimeo/jobs/1851794",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/Vimeo.com"
     },
     {
         "name": "Slack",
@@ -1401,11 +1153,8 @@
     {
         "name": "Lob",
         "link": "https://boards.greenhouse.io/lob/jobs/1862312",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/Lob.com"
     },
     {
         "name": "TripActions",
@@ -1430,7 +1179,8 @@
             " What is your favorite tool and why?\u2731": "cards[7378d60d-7c63-4938-a42f-051bf68649d2][field0]",
             " How did you hear about Kensho?\u2731": "cards[7378d60d-7c63-4938-a42f-051bf68649d2][field1]"
         },
-        "resume_upload": "resume"
+        "resume_upload": "resume",
+        "logo": "https://logo.clearbit.com/Kensho.com"
     },
     {
         "name": "Ironclad",
@@ -1440,7 +1190,8 @@
             "Full name\u2731": "name",
             "Email\u2731": "email"
         },
-        "resume_upload": "resume"
+        "resume_upload": "resume",
+        "logo": "https://logo.clearbit.com/Ironclad.com"
     },
     {
         "name": "Nextdoor",
@@ -1466,30 +1217,14 @@
             "Yes": "cards[d9ba0bdd-120f-4ee6-9148-b26f8979fb20][field6]",
             "No": "cards[d9ba0bdd-120f-4ee6-9148-b26f8979fb20][field6]"
         },
-        "resume_upload": "resume"
-    },
-    {
-        "name": "Convoy",
-        "link": "https://jobs.lever.co/convoy/63403442-d175-4f25-9521-d8ee4121433b/apply",
-        "support": "True",
-        "map": {
-            "Full name\u2731": "name",
-            "Email\u2731": "email",
-            "Phone \u2731": "phone",
-            " How did you hear about Convoy?\u2731": "cards[d9ba0bdd-120f-4ee6-9148-b26f8979fb20][field0]",
-            "Yes": "cards[d9ba0bdd-120f-4ee6-9148-b26f8979fb20][field6]",
-            "No": "cards[d9ba0bdd-120f-4ee6-9148-b26f8979fb20][field6]"
-        },
-        "resume_upload": "resume"
+        "resume_upload": "resume",
+        "logo": "https://logo.clearbit.com/Convoy.com"
     },
     {
         "name": "Fivestars",
         "link": "https://boards.greenhouse.io/fivestars/jobs/1874507",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/Fivestars.com"
     },
     {
         "name": "Transfix",
@@ -1500,15 +1235,13 @@
             "Email\u2731": "email",
             "LinkedIn URL\u2731": "urls[LinkedIn]"
         },
-        "resume_upload": "resume"
+        "resume_upload": "resume",
+        "logo": "https://logo.clearbit.com/Transfix.com"
     },
     {
         "name": "Checkr",
         "link": "https://boards.greenhouse.io/embed/job_app?token=1870995",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
+        "support": "False",
+        "logo": "https://logo.clearbit.com/Checkr.com"
     }
 ]

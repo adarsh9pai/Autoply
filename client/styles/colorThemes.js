@@ -7,3 +7,8 @@ export const Pink = {
     mainColor: '#ffc0cb',
     secondartColor: '#fff2f4',
 }
+
+export const Black = {
+    mainColor: '#000000',
+    secondaryColor: '#FFFFFF'
+}

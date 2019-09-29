@@ -20,49 +20,30 @@ class Apply(Resource):
         parser = reqparse.RequestParser()
         parser.add_argument('link')
         parser.add_argument('name')
-        parser.add_argument('info')
-        parser.add_argument('Current Company')
-        parser.add_argument('Favorite Tool')
-        parser.add_argument('Why Kensho')
+        parser.add_argument('info',type=dict)
         payload = parser.parse_args()
 
         payload_url = payload['link']
-        info = [{
-            "Current Company": payload['Current Company'],
-            "Favorite Tool": payload['Favorite Tool'],
-            "Why Kensho": payload['Why Kensho']
-        }]
+        info = payload['info']
 
-
-        chrome_opt = Options()
-        chrome_opt.add_argument('--headless')
+        #chrome_opt = Options()
+        #chrome_opt.add_argument('--headless')
         #chrome_opt.add_argument('--no-sandbox')
         #chrome_opt.add_argument('--disable-dev-shm-usage')
-        browser = webdriver.Chrome(chrome_options=chrome_opt)
+        #browser = webdriver.Chrome(chrome_options=chrome_opt)
+        browser = webdriver.Chrome()
         browser.get(payload_url)
 
-        if "greenhouse" in payload_url:
-
-            first_name = browser.find_element_by_id("first_name")
-            last_name = browser.find_element_by_id("last_name")
-            email = browser.find_element_by_id("email")
-            phone = browser.find_element_by_id("phone")
-            
-
-            resume = browser.find_element_by_name("file")
-            first_name.send_keys("Adarsh Yogesh")
-            last_name.send_keys("Pai")
-            email.send_keys("adarsh9pai@gmail.com")
-            phone.send_keys("6825512698")
-            resume.send_keys(os.getcwd()+'/resume.pdf')
-        
         if "lever" in payload_url:
 
             resume = browser.find_element_by_name("resume")
-            resume.send_keys(os.getcwd()+'/image.jpeg')
+            resume.send_keys(os.getcwd()+'/'+info["id"]+'+.jpeg')
 
-            print(info)
-
+            browser.find_element_by_name('name').send_keys(info['first_name'] + info['last_name'])
+            browser.find_element_by_name('email').send_keys(info['email'])
+            browser.find_element_by_name('phone').send_keys(info['phone'])
+            info['button'] = "null_button"
+        
             for companies in xpath:
                 company = None
 
@@ -72,10 +53,12 @@ class Apply(Resource):
                     for key in company.keys():
                         if company[key] != payload['name']:
                             action = browser.find_element_by_xpath(key)
-                            if info[company[key]] is not None:
+                            if info[company[key]] != None and company[key]:
                                 action.send_keys(info[company[key]])
 
-
+            browser.find_element_by_xpath(key).send_keys(Keys.ENTER)
+            browser.close()
         return {
             'message' : payload_url
         }, 200
+
