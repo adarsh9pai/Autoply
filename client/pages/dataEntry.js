@@ -229,6 +229,7 @@ class DataEntry extends Component {
                     autoFocus={true}
                 />
                 <Button
+                    style={styles.submitButton}
                     onPress={this._pickImage}
                     title="Upload your resume and submit"
                 />
