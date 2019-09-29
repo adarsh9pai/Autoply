@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Button, TextInput, Text } from 'react-native'
+import { View, Button, TextInput, Text,  } from 'react-native'
 import { styles } from '../styles/styles'
 import { Avatar } from 'react-native-elements'
 import { connect } from 'react-redux'
@@ -12,7 +12,7 @@ class ProfileScreen extends Component {
     const { user } = this.props
 
     return (
-      <View>
+      <View style={{backgroundColor: 'black'}}>
         <Avatar
           size="xlarge"
           containerStyle={styles.profilePicture}
@@ -44,25 +44,6 @@ class ProfileScreen extends Component {
           editable={false}
         />
 
-        <TextInput
-          style={styles.textInput}
-          maxLength={100}
-          value="Github"
-          editable={false}
-        />
-
-        <TextInput
-          style={styles.textInput}
-          maxLength={100}
-          value="Linkedin"
-          editable={false}
-        />
-        <TextInput
-          style={styles.textInput}
-          maxLength={100}
-          value="Portfolio"
-          editable={false}
-        />
         <Button
           title='Edit'
           onPress={this.onSubmit}
@@ -75,6 +56,7 @@ class ProfileScreen extends Component {
 
 
 const maptStateToProps = (state) => {
+  console.log(state)
   return {
     user: state.user
   }
