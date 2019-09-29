@@ -9,14 +9,14 @@ export default class DataEntry extends Component {
         super(props)
 
         this.state = {
-            name: '',
+            universityName: '',
             jobApplicationLocation: '',
             urlGithub: '',
             urlLinkedin: '',
             urlTwitter: '',
             urlPortfolio: '',
-        }
-        this.handleNameChange = this.handleNameChange.bind(this)
+        },
+        this.handleUniversityChange = this.handleUniversityChange.bind(this)
         this.handleJobAppChange = this.handleJobAppChange.bind(this)
         this.handleurlGithubChange = this.handleurlGithubChange.bind(this)
         this.handleurlLinkedChange = this.handleurlLinkedChange.bind(this)
@@ -25,8 +25,8 @@ export default class DataEntry extends Component {
 
     }
 
-    handleNameChange = (name) => {
-        this.setState({ name })
+    handleUniversityChange = (universityName) => {
+        this.setState({ universityName })
     }
 
     handleJobAppChange = (jobApplicationLocation) => {
@@ -54,8 +54,7 @@ export default class DataEntry extends Component {
         const name = JSON.stringify(this.props.navigation.getParam('name'))
         const urlLength = JSON.stringify(this.props.navigation.getParam('photoUrl')).length
         const photoUrl = JSON.stringify(this.props.navigation.getParam('photoUrl')).substring(1, urlLength - 1)
-        console.log(newUrl)
-
+        
         const id = JSON.stringify(this.props.navigation.getParam('id'))
         const user = {
             ...this.state,
@@ -90,7 +89,7 @@ export default class DataEntry extends Component {
                     style={styles.textInput}
                     placeholder='your university'
                     maxLength={20}
-                    value={this.state.name}
+                    value={this.state.universityName}
                     onChangeText={this.handleNameChange}
                 />
                 <TextInput
