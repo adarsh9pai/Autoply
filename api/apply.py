@@ -72,7 +72,8 @@ class Apply(Resource):
                     for key in company.keys():
                         if company[key] != payload['name']:
                             action = browser.find_element_by_xpath(key)
-                            action.send_keys(info[company[key]])
+                            if info[company[key]] is not None:
+                                action.send_keys(info[company[key]])
 
 
         return {
