@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
-import { View, Button, TextInput, Text } from 'react-native'
+import { ScrollView, Button, TextInput, Text, KeyboardAvoidingView } from 'react-native'
 import { styles } from '../styles/styles'
+import { Purple as Theme } from '../styles/colorThemes'
 import { Avatar } from 'react-native-elements'
+// import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 
 
 export default class DataEntry extends Component {
@@ -16,13 +18,12 @@ export default class DataEntry extends Component {
             urlTwitter: '',
             urlPortfolio: '',
         },
-        this.handleUniversityChange = this.handleUniversityChange.bind(this)
+            this.handleUniversityChange = this.handleUniversityChange.bind(this)
         this.handleJobAppChange = this.handleJobAppChange.bind(this)
         this.handleurlGithubChange = this.handleurlGithubChange.bind(this)
         this.handleurlLinkedChange = this.handleurlLinkedChange.bind(this)
         this.handleTwitterChange = this.handleTwitterChange.bind(this)
         this.handlePortfolioChange = this.handlePortfolioChange.bind(this)
-
     }
 
     handleUniversityChange = (universityName) => {
@@ -50,12 +51,15 @@ export default class DataEntry extends Component {
     }
 
     onSubmit = e => {
+        const { navigate } = this.props.navigation
         const email = JSON.stringify(this.props.navigation.getParam('email'))
         const name = JSON.stringify(this.props.navigation.getParam('name'))
         const urlLength = JSON.stringify(this.props.navigation.getParam('photoUrl')).length
         const photoUrl = JSON.stringify(this.props.navigation.getParam('photoUrl')).substring(1, urlLength - 1)
+        const idLength = JSON.stringify(this.props.navigation.getParam('id')).length
+        const id = JSON.stringify(this.props.navigation.getParam('id')).substring(1, idLength - 1)
+        console.log(id)
         
-        const id = JSON.stringify(this.props.navigation.getParam('id'))
         const user = {
             ...this.state,
             email,
@@ -64,74 +68,98 @@ export default class DataEntry extends Component {
             id,
 
         }
+        // console.log(user)
+        navigate('Resume', user)
     }
 
     render() {
 
         const urlLength = JSON.stringify(this.props.navigation.getParam('photoUrl')).length
         const photoUrl = JSON.stringify(this.props.navigation.getParam('photoUrl')).substring(1, urlLength - 1)
+        const nameLength = JSON.stringify(this.props.navigation.getParam('name')).length
+        const name = JSON.stringify(this.props.navigation.getParam('name')).substring(1, nameLength - 1)
+        const emailLength = JSON.stringify(this.props.navigation.getParam('email')).length
+        const email = JSON.stringify(this.props.navigation.getParam('email')).substring(1, emailLength - 1)
+
+        console.log(this.props)
+
 
         return (
-            <View>
+            <KeyboardAvoidingView enabled>
+
                 <Avatar
+                    size="large"
+                    containerStyle={styles.profilePicture}
                     rounded
                     source={{ uri: photoUrl }}
                 />
 
-                <Text>
-                    {JSON.stringify(this.props.navigation.getParam('name'))}
+                <Text
+                    style={styles.profileText}
+                >
+                    {name}
                 </Text>
-                <Text>
-                    {JSON.stringify(this.props.navigation.getParam('email'))}
+                <Text
+                    style={styles.profileText}
+                >
+                    {email}
                 </Text>
 
                 <TextInput
                     style={styles.textInput}
                     placeholder='your university'
-                    maxLength={20}
+                    maxLength={100}
                     value={this.state.universityName}
-                    onChangeText={this.handleNameChange}
+                    onChangeText={this.handleUniversityChange}
+                    autoFocus={true}
                 />
                 <TextInput
                     style={styles.textInput}
                     placeholder='your location'
-                    maxLength={20}
+                    maxLength={100}
                     value={this.state.jobApplicationLocation}
                     onChangeText={this.handleJobAppChange}
+                    autoFocus={true}
                 />
                 <TextInput
                     style={styles.textInput}
                     placeholder='Github URL'
-                    maxLength={20}
+                    maxLength={100}
                     value={this.state.urlGithub}
                     onChangeText={this.handleurlGithubChange}
+                    autoFocus={true}
                 />
                 <TextInput
                     style={styles.textInput}
                     placeholder='Linkedin URL'
-                    maxLength={20}
+                    maxLength={100}
                     value={this.state.urlLinkedin}
                     onChangeText={this.handleurlLinkedChange}
+                    autoFocus={true}
                 />
                 <TextInput
                     style={styles.textInput}
                     placeholder='Twitter URL'
-                    maxLength={20}
+                    maxLength={100}
                     value={this.state.urlTwitter}
                     onChangeText={this.handleTwitterChange}
+                    autoFocus={true}
                 />
                 <TextInput
                     style={styles.textInput}
                     placeholder='Personal Portfolio'
-                    maxLength={20}
+                    maxLength={100}
                     value={this.state.urlPortfolio}
                     onChangeText={this.handlePortfolioChange}
+                    autoFocus={true}
                 />
                 <Button
                     title='Submit'
                     onPress={this.onSubmit}
                 />
-            </View>
+
+            </KeyboardAvoidingView>
+
         )
     }
 }
