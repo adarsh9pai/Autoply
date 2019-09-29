@@ -8,6 +8,8 @@ import { createAppContainer } from 'react-navigation'
 import { createStackNavigator } from 'react-navigation-stack'
 import HomeScreen from './pages/homeScreen'
 import MainScreen from './pages/bottomNavigation'
+import EntryScreen from './pages/dataEntry'
+import WebScreen from './pages/webScreen'
 
 
 const store = createStore(RootReducer)
@@ -21,8 +23,10 @@ export default function App() {
 }
 
 const MainNavigator = createStackNavigator({
+  MainScreen: { screen: MainScreen },
   Home: { screen: HomeScreen },
-  MainScreen: { screen: MainScreen }
+  DataEntry: {screen: EntryScreen},
+  Web: { screen: WebScreen },
 })
 
 const NavApp = createAppContainer(MainNavigator)

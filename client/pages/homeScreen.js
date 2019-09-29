@@ -1,22 +1,23 @@
-import React, { Component } from 'react';
-import { View, Text, Button, processColor, Image, SafeAreaView } from 'react-native';
-import * as Google from 'expo-google-app-auth';
-import { GoogleOAuth } from '../secret';
-import GoogleButton from '../images/google_button.png';
-import { TouchableOpacity } from 'react-native-gesture-handler';
-import { styles } from '../styles/styles';
-import { SocialIcon } from 'react-native-elements';
-import AppLogo from '../images/app_logo.png';
+import React, { Component } from 'react'
+import { View, Text, Button, processColor, Image, SafeAreaView } from 'react-native'
+import * as Google from 'expo-google-app-auth'
+import { GoogleOAuth } from '../secret'
+import GoogleButton from '../images/google_button.png'
+import { TouchableOpacity } from 'react-native-gesture-handler'
+import { styles } from '../styles/styles'
+import { SocialIcon } from 'react-native-elements'
+import AppLogo from '../images/app_logo.png'
+
 
 export default class HomeScreen extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       signedIn: false,
       name: "",
       email: "",
       photoUrl: ""
-    };
+    }
   }
 
   static navigationOptions = {
@@ -36,7 +37,7 @@ export default class HomeScreen extends Component {
           ...user,
           signedIn: true
         })
-        navigate('MainScreen', user)
+        navigate('DataEntry', user)
       }
       else
       {
@@ -65,6 +66,6 @@ export default class HomeScreen extends Component {
           onPress={this.googleSignIn}
           style={{width: 200, backgroundColor: '#dd4b39'}}/>
       </SafeAreaView>
-    );
+    )
   }
 }
