@@ -69,11 +69,10 @@ class Apply(Resource):
                 if companies['Name'] == payload['name']:
                     company = companies  
                 if company is not None:      
-                    for keys in company.keys():
-                        info_key = company[keys]
-                        if info_key != payload['name']:
-                            action = browser.find_element_by_xpath(keys)
-                            action.send_keys(info["Why Kensho"])
+                    for key in company.keys():
+                        if company[key] != payload['name']:
+                            action = browser.find_element_by_xpath(key)
+                            action.send_keys(info[company[key]])
 
 
         return {
