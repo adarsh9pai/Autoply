@@ -80,16 +80,6 @@
         "support": "False"
     },
     {
-        "name": "Rimeto",
-        "link": "https://jobs.lever.co/rimeto/d357c4b5-5a3e-4c75-84fd-057d2051cd92/apply",
-        "support": "True",
-        "map": {
-            "Full name\u2731": "name",
-            "Email\u2731": "email"
-        },
-        "resume_upload": "resume"
-    },
-    {
         "name": "Facebook",
         "link": "https://www.facebook.com/careers/jobs/?roles[0]=intern",
         "support": "False"
@@ -110,24 +100,6 @@
         "support": "False"
     },
     {
-        "name": "Duolingo",
-        "link": "https://boards.greenhouse.io/duolingo/jobs/4351727002",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
-    },
-    {
-        "name": "Robinhood",
-        "link": "https://boards.greenhouse.io/robinhood/jobs/1739582",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
-    },
-    {
         "name": "Morgan Stanley",
         "link": "https://morganstanley.tal.net/vx/lang-en-us/mobile-0/brand-2/xf-88b1eb77da85/candidate/so/pm/1/pl/1/opp/8319/apply/en-us",
         "support": "False"
@@ -141,15 +113,6 @@
         "name": "Optiver",
         "link": "https://www.optiver.com/na/en/job-opportunities/us-4315469002",
         "support": "False"
-    },
-    {
-        "name": "Virtu Financial",
-        "link": "https://boards.greenhouse.io/virtu/jobs/4367942002",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
     },
     {
         "name": "Citadel",
@@ -212,22 +175,6 @@
         "support": "False"
     },
     {
-        "name": "Qualtrics",
-        "link": "https://boards.greenhouse.io/qualtrics/jobs/755570?t=edd9906d1",
-        "support": "True",
-        "map": {},
-        "resume_upload": "resume_chosen"
-    },
-    {
-        "name": "Databricks",
-        "link": "https://boards.greenhouse.io/databricks/jobs/4374189002?gh_src=62a881d62",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
-    },
-    {
         "name": "Twitch",
         "link": "https://boards.greenhouse.io/twitch/jobs/4387419002",
         "support": "True",
@@ -259,19 +206,6 @@
         "support": "False"
     },
     {
-        "name": "Atlassian",
-        "link": "https://jobs.lever.co/atlassian/9484630b-4039-415e-af9a-c1e2c34e5a8b/apply",
-        "support": "True",
-        "map": {
-            "Full name\u2731": "name",
-            "Email\u2731": "email",
-            "Yes": "cards[cc8af687-6db0-4331-84ea-cdd0356bf325][field1]",
-            "No": "cards[cc8af687-6db0-4331-84ea-cdd0356bf325][field1]",
-            " What is your expected date of graduation? (month, year)\u2731": "cards[cc8af687-6db0-4331-84ea-cdd0356bf325][field4]"
-        },
-        "resume_upload": "resume"
-    },
-    {
         "name": "Capital One",
         "link": "https://campus.capitalone.com/job/mclean/technology-internship-program-summer-2020/1786/12562814",
         "support": "False"
@@ -282,32 +216,9 @@
         "support": "False"
     },
     {
-        "name": "Figma",
-        "link": "https://jobs.lever.co/figma/91da97b9-ff1d-4e08-a2f1-4867537e5eb2/apply",
-        "support": "True",
-        "map": {
-            "Full name\u2731": "name",
-            "Email\u2731": "email"
-        },
-        "resume_upload": "resume"
-    },
-    {
         "name": "Cisco",
         "link": "https://jobs.cisco.com/jobs/ProjectDetail/Software-Engineer-Bachelor-s-Intern-United-States/1265291",
         "support": "False"
-    },
-    {
-        "name": "Wish",
-        "link": "https://jobs.lever.co/wish/a7c634f6-40d6-43cd-828a-dc0bfc8b33a8/apply",
-        "support": "True",
-        "map": {
-            "Full name\u2731": "name",
-            "Email\u2731": "email",
-            "Phone \u2731": "phone",
-            "Current company \u2731": "org",
-            "LinkedIn URL\u2731": "urls[LinkedIn]"
-        },
-        "resume_upload": "resume"
     },
     {
         "name": "Samsara",
@@ -444,13 +355,6 @@
         "support": "False"
     },
     {
-        "name": "RetailMeNot, Inc.",
-        "link": "https://jobs.lever.co/retailmenot/13c1b9e0-d1f7-42a3-b60c-c7fe66e4f0f8/apply/apply",
-        "support": "True",
-        "map": {},
-        "resume_upload": "resume"
-    },
-    {
         "name": "Sony Interactive Entertainment PlayStation",
         "link": "https://boards.greenhouse.io/sonyinteractiveentertainmentplaystation/jobs/1833253",
         "support": "True",
@@ -514,31 +418,6 @@
         "name": "Platform9",
         "link": "https://hire.withgoogle.com/public/jobs/platform9com/view/P_AAAAAADAAF5OEdk-bHtkWY",
         "support": "False"
-    },
-    {
-        "name": "SelfMade",
-        "link": "https://jobs.lever.co/selfmade/bca70f35-f732-4ecb-981e-b847fc9b5809/apply",
-        "support": "True",
-        "map": {
-            "Full name\u2731": "name",
-            "Email\u2731": "email",
-            "Phone \u2731": "phone",
-            "LinkedIn": "cards[93e50f0c-43ae-4f7b-985b-16c669b26feb][field0]",
-            "TechCrunch": "cards[93e50f0c-43ae-4f7b-985b-16c669b26feb][field0]",
-            "Women In Tech": "cards[93e50f0c-43ae-4f7b-985b-16c669b26feb][field0]",
-            "AngelList": "cards[93e50f0c-43ae-4f7b-985b-16c669b26feb][field0]",
-            "Referral": "cards[93e50f0c-43ae-4f7b-985b-16c669b26feb][field0]",
-            "Glassdoor": "cards[93e50f0c-43ae-4f7b-985b-16c669b26feb][field0]",
-            "BuiltInNYC": "cards[93e50f0c-43ae-4f7b-985b-16c669b26feb][field0]",
-            "Handshake": "cards[93e50f0c-43ae-4f7b-985b-16c669b26feb][field0]",
-            "We reached out to you": "cards[93e50f0c-43ae-4f7b-985b-16c669b26feb][field0]",
-            "Other": "cards[93e50f0c-43ae-4f7b-985b-16c669b26feb][field0]",
-            "Winter": "cards[e3b6c1a2-0e94-4976-a8fd-abf6de8259db][field0]",
-            "Spring": "cards[e3b6c1a2-0e94-4976-a8fd-abf6de8259db][field0]",
-            "Summer": "cards[e3b6c1a2-0e94-4976-a8fd-abf6de8259db][field0]",
-            "Fall": "cards[e3b6c1a2-0e94-4976-a8fd-abf6de8259db][field0]"
-        },
-        "resume_upload": "resume"
     },
     {
         "name": "NerdWallet",
@@ -653,21 +532,6 @@
         "support": "False"
     },
     {
-        "name": "Affirm",
-        "link": "https://jobs.lever.co/affirm/5340f1d3-cd6d-44ef-a5c6-f9def8609d02/apply",
-        "support": "True",
-        "map": {
-            "Full name\u2731": "name",
-            "Email\u2731": "email"
-        },
-        "resume_upload": "resume"
-    },
-    {
-        "name": "Viasat",
-        "link": "https://careers.viasat.com/careers/FolderDetail/Software-Engineer-Intern/3446",
-        "support": "False"
-    },
-    {
         "name": "WillowTree",
         "link": "https://www.willowtreeapps.com/careers/jobs/4381004002/software-engineer-intern",
         "support": "False"
@@ -686,16 +550,6 @@
         "name": "Garmin",
         "link": "https://garmin.taleo.net/careersection/garmin+career+section/jobsearch.ftl",
         "support": "False"
-    },
-    {
-        "name": "CTRL-Lab",
-        "link": "https://jobs.lever.co/ctrl-labs/9218edb0-e31a-452c-8949-66d59e40423c/apply",
-        "support": "True",
-        "map": {
-            "Full name\u2731": "name",
-            "Email\u2731": "email"
-        },
-        "resume_upload": "resume"
     },
     {
         "name": "BookBub",
@@ -795,17 +649,6 @@
         "resume_upload": "resume_chosen"
     },
     {
-        "name": "SigOpt",
-        "link": "https://jobs.lever.co/sigopt/141cec90-5ff0-46dc-8e99-02760d3e0f2d/apply",
-        "support": "True",
-        "map": {
-            "Full name\u2731": "name",
-            "Email\u2731": "email",
-            "Phone \u2731": "phone"
-        },
-        "resume_upload": "resume"
-    },
-    {
         "name": "datto",
         "link": "https://www.datto.com/careers/job-board/post/1604239",
         "support": "False"
@@ -835,13 +678,6 @@
         "support": "False"
     },
     {
-        "name": "Petal",
-        "link": "https://jobs.lever.co/petalcard/907525c3-7bd3-40d4-98a9-636304415e4f/apply/apply",
-        "support": "True",
-        "map": {},
-        "resume_upload": "resume"
-    },
-    {
         "name": "InterSystems",
         "link": "https://jobs-intersystems.icims.com/jobs/5277/intersystems-summer-internship-2020/job",
         "support": "False"
@@ -860,13 +696,6 @@
         "name": "TripAdvisor",
         "link": "https://careers.tripadvisor.com/c/campus-jobs",
         "support": "False"
-    },
-    {
-        "name": "Etsy",
-        "link": "https://jobs.lever.co/etsy/44a07d1f-d198-4a2a-9c28-64d0ad7db531/apply/apply",
-        "support": "True",
-        "map": {},
-        "resume_upload": "resume"
     },
     {
         "name": "Kabbage",
@@ -930,16 +759,6 @@
         "support": "False"
     },
     {
-        "name": "Tubular Labs",
-        "link": "https://jobs.lever.co/tubularlabs/f3907864-0713-4fe0-b70d-4859b54d2d5e/apply",
-        "support": "True",
-        "map": {
-            "Full name\u2731": "name",
-            "Email\u2731": "email"
-        },
-        "resume_upload": "resume"
-    },
-    {
         "name": "Rubrik",
         "link": "https://www.rubrik.com/company/careers/university-talent/jobs/software-engineering-internship-783507/",
         "support": "False"
@@ -957,31 +776,6 @@
         "name": "GrammaTech",
         "link": "https://careers-grammatech.icims.com/jobs/1128/software-engineer-intern-%28research%29---summer-2020/job",
         "support": "False"
-    },
-    {
-        "name": "Huobi",
-        "link": "https://jobs.lever.co/huobi/c454e383-9302-4bec-88c0-7a9f749cb5f9/apply",
-        "support": "True",
-        "map": {
-            "Full name\u2731": "name",
-            "Email\u2731": "email",
-            "Phone \u2731": "phone",
-            "Current company \u2731": "org",
-            "LinkedIn URL\u2731": "urls[LinkedIn]",
-            "US Citizen": "cards[cd21ed92-25e0-4bd7-8d72-a658dfacd0dc][field1]",
-            "Green Card": "cards[cd21ed92-25e0-4bd7-8d72-a658dfacd0dc][field1]",
-            "H1B": "cards[cd21ed92-25e0-4bd7-8d72-a658dfacd0dc][field1]",
-            "H4": "cards[cd21ed92-25e0-4bd7-8d72-a658dfacd0dc][field1]",
-            "OPT/CPT": "cards[cd21ed92-25e0-4bd7-8d72-a658dfacd0dc][field1]",
-            "Others": "cards[cd21ed92-25e0-4bd7-8d72-a658dfacd0dc][field1]",
-            "No": "cards[cd21ed92-25e0-4bd7-8d72-a658dfacd0dc][field2]",
-            "Yes": "cards[cd21ed92-25e0-4bd7-8d72-a658dfacd0dc][field2]",
-            "within 2 weeks": "cards[97a07992-1118-4b26-bd0a-806f403a7f7f][field0]",
-            "~1 month": "cards[97a07992-1118-4b26-bd0a-806f403a7f7f][field0]",
-            "1-3 months": "cards[97a07992-1118-4b26-bd0a-806f403a7f7f][field0]",
-            "More": "cards[97a07992-1118-4b26-bd0a-806f403a7f7f][field0]"
-        },
-        "resume_upload": "resume"
     },
     {
         "name": "Honey",
@@ -1002,16 +796,6 @@
         "name": "Uber",
         "link": "https://www.uber.com/global/en/careers/list/54737/",
         "support": "False"
-    },
-    {
-        "name": "Cambly",
-        "link": "https://jobs.lever.co/cambly/21350d5c-8ef0-4284-8348-8d3218d24ecd/apply",
-        "support": "True",
-        "map": {
-            "Full name\u2731": "name",
-            "Email\u2731": "email"
-        },
-        "resume_upload": "resume"
     },
     {
         "name": "Cogo Labs",
@@ -1109,16 +893,6 @@
         "resume_upload": "resume"
     },
     {
-        "name": "Ironclad",
-        "link": "https://jobs.lever.co/ironcladapp/7dc69333-8b40-40d9-b1c1-b8165471d88c/apply",
-        "support": "True",
-        "map": {
-            "Full name\u2731": "name",
-            "Email\u2731": "email"
-        },
-        "resume_upload": "resume"
-    },
-    {
         "name": "Nextdoor",
         "link": "https://about.nextdoor.com/careers-list/?gh_jid=1871040",
         "support": "False"
@@ -1129,42 +903,8 @@
         "support": "False"
     },
     {
-        "name": "Convoy",
-        "link": "https://jobs.lever.co/convoy/63403442-d175-4f25-9521-d8ee4121433b/apply",
-        "support": "True",
-        "map": {
-            "Full name\u2731": "name",
-            "Email\u2731": "email",
-            "Phone \u2731": "phone",
-            " How did you hear about Convoy?\u2731": "cards[d9ba0bdd-120f-4ee6-9148-b26f8979fb20][field0]",
-            "Yes": "cards[d9ba0bdd-120f-4ee6-9148-b26f8979fb20][field6]",
-            "No": "cards[d9ba0bdd-120f-4ee6-9148-b26f8979fb20][field6]"
-        },
-        "resume_upload": "resume"
-    },
-    {
         "name": "Fivestars",
         "link": "https://boards.greenhouse.io/fivestars/jobs/1874507",
-        "support": "True",
-        "map": {
-            "\nPhone *\n\n": "phone"
-        },
-        "resume_upload": "resume_chosen"
-    },
-    {
-        "name": "Transfix",
-        "link": "https://jobs.lever.co/transfix/c9c05b4f-18f7-4ba3-9361-bacd89192589/apply",
-        "support": "True",
-        "map": {
-            "Full name\u2731": "name",
-            "Email\u2731": "email",
-            "LinkedIn URL\u2731": "urls[LinkedIn]"
-        },
-        "resume_upload": "resume"
-    },
-    {
-        "name": "Checkr",
-        "link": "https://boards.greenhouse.io/embed/job_app?token=1870995",
         "support": "True",
         "map": {
             "\nPhone *\n\n": "phone"

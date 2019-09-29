@@ -10,6 +10,7 @@ import HomeScreen from './pages/homeScreen'
 import MainScreen from './pages/bottomNavigation'
 import EntryScreen from './pages/dataEntry'
 import WebScreen from './pages/webScreen'
+import Resume from './pages/resume'
 
 
 const store = createStore(RootReducer)
@@ -23,7 +24,7 @@ export default function App() {
 }
 
 const MainNavigator = createStackNavigator({
-  MainScreen: { screen: MainScreen },
+  MainScreen: { screen: Resume },
   Home: { screen: HomeScreen },
   DataEntry: {screen: EntryScreen},
   Web: { screen: WebScreen },
