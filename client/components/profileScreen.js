@@ -21,7 +21,6 @@ export default class ProfileScreen extends Component {
           title='Logout'
           onPress={() => navigate('Home')}
         />
-        {/* <BottomBar /> */}
       </View>
     )
   }

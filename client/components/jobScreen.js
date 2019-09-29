@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Dimensions, ImageBackground, Animated, PanResponder, Text, Image } from 'react-native'
+import { View, Dimensions, ImageBackground, Animated, PanResponder, Text } from 'react-native'
 import { connect } from 'react-redux'
 import { styles } from '../styles/styles'
 
@@ -107,7 +107,7 @@ class JobScreen extends React.Component {
             {...this.PanResponder.panHandlers}
             key={job.id}
             style={[this.rotateAndTranslate, {
-            height: SCREEN_HEIGHT * 0.80, width: SCREEN_WIDTH, padding: 10, position: 'absolute'
+              height: SCREEN_HEIGHT * 0.80, width: SCREEN_WIDTH, padding: 10, position: 'absolute'
             }]}>
             <ImageBackground style={{ height: '100%' }} imageStyle={styles.job_image}
               source={{ uri: job.image }}>
@@ -140,7 +140,14 @@ class JobScreen extends React.Component {
   }
 
   onRightSwipe = e => {
-    console.log('right swiped')
+    currPost = this.props.jobs[this.state.currentIndex]
+
+    if (currPost.support) {
+      this.props.navigation.navigate('WebView', currPost)
+      console.log('its supported')
+    } else {
+      this.props.navigation.navigate('Web', currPost)
+    }
   }
 
   onLeftSwipe = e => {

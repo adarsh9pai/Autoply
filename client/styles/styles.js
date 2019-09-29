@@ -38,5 +38,14 @@ export const styles = StyleSheet.create({
         width: null,
         resizeMode: 'cover',
         borderRadius: 20
+    },
+    textInput: {
+        borderColor: '#CCCCCC',
+        borderTopWidth: 1,
+        borderBottomWidth: 1,
+        height: 50,
+        fontSize: 25,
+        paddingLeft: 20,
+        paddingRight: 20
     }
 })
