@@ -12,23 +12,15 @@ const initState = {
         { "id": "5d8fbd88fc13ae7aa2000004", "support": true, "link": "https://cdbaby.com/quis.json?luctus=ligula&et=in&ultrices=lacus&posuere=curabitur&cubilia=at&curae=ipsum&duis=ac&faucibus=tellus&accumsan=semper&odio=interdum&curabitur=mauris&convallis=ullamcorper&duis=purus&consequat=sit&dui=amet&nec=nulla&nisi=quisque&volutpat=arcu&eleifend=libero&donec=rutrum&ut=ac&dolor=lobortis&morbi=vel&vel=dapibus", "name": "Browseblab", "image": "http://dummyimage.com/194x197.jpg/cc0000/ffffff" },
         { "id": "5d8fbd88fc13ae7aa2000009", "support": true, "link": "https://surveymonkey.com/nisi/eu/orci/mauris/lacinia.xml?non=ligula&mi=vehicula&integer=consequat&ac=morbi&neque=a&duis=ipsum", "name": "Skyvu", "image": "http://dummyimage.com/203x182.bmp/dddddd/000000" }
     ],
-    user: {
-        "universityName": "University of Texas, Arlington ",
-        "name": "Imtiaz Khaled",
-        "email": "imtiazkhaled07@gmail.com",
-        "id": "5d904979fc13ae5228000000",
-        "jobApplicationLocation": "Texas",
-        "urlGithub": "https://github.com/ImtiazKhaled",
-        "urlLinkedin": "https://www.linkedin.com/in/imtiaz-mujtaba-khaled-47b887171/",
-        "urlPortfolio": "https://imtiazkhaled.github.io/my-portfolio/#/",
-        "photoUrl": "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/53551206_2204740312879455_1797005387409391616_n.jpg?_nc_cat=107&_nc_oc=AQnTpnev2LAq8UxjhXfUILrAqCb1KlrSdeO8J3iInd9zN6-WFPg7HjnDBTutH0jWdtE&_nc_ht=scontent-dfw5-1.xx&oh=e8df0761c0776472f42bbfc2eaca6d16&oe=5E30B1F1"
-    },
+    user: {},
 }
 
 export const RootReducer = (state = initState, action) => {
 
     switch (action.type) {
-
+        case 'ADD_USER':
+            console.log('action', action)
+            break;
 
         default:
             return state

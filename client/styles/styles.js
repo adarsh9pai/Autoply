@@ -44,7 +44,7 @@ export const styles = StyleSheet.create({
         borderTopWidth: 1,
         borderBottomWidth: 1,
         height: 50,
-        fontSize: 20,
+        fontSize: 25,
         paddingLeft: 20,
         paddingRight: 20
     },
