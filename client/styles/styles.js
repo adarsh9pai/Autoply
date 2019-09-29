@@ -33,17 +33,18 @@ export const styles = StyleSheet.create({
         color: 'white'
     },
     job_text: {
-        fontSize: 50,
+        fontSize: 40,
         fontWeight: 'bold',
         paddingLeft: '4%',
-        top: '70%'
+        top: '15%'
     },
     job_image: {
         flex: 1,
         height: null,
         width: null,
-        resizeMode: 'cover',
-        borderRadius: 20
+        // resizeMode: 'cover',
+        borderRadius: 20,
+        backgroundColor: 'white'
     },
     textInput: {
         borderColor: '#CCCCCC',
@@ -100,5 +101,15 @@ export const styles = StyleSheet.create({
       maybeRenderImageText: {
         paddingHorizontal: 10,
         paddingVertical: 10,
+      },
+      submitButton: {
+        height: 100,
+        borderTopWidth: 1,
+        borderBottomWidth: 1,
+        fontSize: 25,
+        minHeight: 50,
+        paddingLeft: 20,
+        paddingRight: 20,
+        color: 'white'
       }
 })
