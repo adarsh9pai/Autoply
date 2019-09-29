@@ -36,8 +36,8 @@ class Apply(Resource):
 
         chrome_opt = Options()
         chrome_opt.add_argument('--headless')
-        chrome_opt.add_argument('--no-sandbox')
-        chrome_opt.add_argument('--disable-dev-shm-usage')
+        #chrome_opt.add_argument('--no-sandbox')
+        #chrome_opt.add_argument('--disable-dev-shm-usage')
         browser = webdriver.Chrome(chrome_options=chrome_opt)
         browser.get(payload_url)
 

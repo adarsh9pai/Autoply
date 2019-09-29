@@ -25,8 +25,14 @@ const MainNavigator = createStackNavigator({
   MainScreen: { screen: MainScreen },
   DataEntry: { screen: DataEntry },
   Web: { screen: WebScreen },
-}, {
-  headerMode: 'screen'
+},
+{
+  defaultNavigationOptions: {
+    headerTintColor: 'white',
+    headerStyle: {
+      backgroundColor: '#000'
+    }
+  }
 })
 
-const NavApp = createAppContainer(MainNavigator)
+const NavApp = createAppContainer(MainNavigator, { tintColor: 'black'})
