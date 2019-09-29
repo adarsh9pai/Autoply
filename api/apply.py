@@ -11,7 +11,5 @@ class Apply(Resource):
         company_name = args['company_name']
 
         return {
-            'message' : 'selenium apply endpoint',
-            'user_profile' : user_profile,
-            'company_applied' : company_name,
+            'message' : 'selenium apply endpoint'
         }, 200
