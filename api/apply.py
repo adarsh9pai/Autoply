@@ -36,25 +36,14 @@ class Apply(Resource):
         browser = webdriver.Chrome()
         browser.get(payload_url)
 
-        if "greenhouse" in payload_url:
-
-            first_name = browser.find_element_by_id("first_name")
-            last_name = browser.find_element_by_id("last_name")
-            email = browser.find_element_by_id("email")
-            phone = browser.find_element_by_id("phone")
-            
-
-            resume = browser.find_element_by_name("file")
-            first_name.send_keys("Adarsh Yogesh")
-            last_name.send_keys("Pai")
-            email.send_keys("adarsh9pai@gmail.com")
-            phone.send_keys("6825512698")
-            resume.send_keys(os.getcwd()+'/resume.pdf')
-        
         if "lever" in payload_url:
 
             resume = browser.find_element_by_name("resume")
             resume.send_keys(os.getcwd()+'/image.jpeg')
+
+            browser.find_element_by_name('name').send_keys(info['first_name'] + info['last_name'])
+            browser.find_element_by_name('email').send_keys(info['email'])
+            browser.find_element_by_name('phone').send_keys(info['phone'])
 
         
             for companies in xpath:
@@ -68,7 +57,7 @@ class Apply(Resource):
                             action = browser.find_element_by_xpath(key)
                             action.send_keys(info[company[key]])
 
-
+            browser.find_element_by_xpath("/html/body/div[2]/div/div[2]/form/div[6]/button").send_keys(Keys.ENTER)
         return {
             'message' : "success"
         }, 200
